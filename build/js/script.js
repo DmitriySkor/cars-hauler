@@ -1,0 +1,1 @@
+$(document).ready((function(){$(".owl-carousel").owlCarousel()})),function(o){o((function(){o("input, select").styler()}))}(jQuery),$().fancybox({selector:'[data-fancybox="gallery"]',loop:!0}),jQuery((function(o){o(".masked-input").mask("+38 ( 999 ) 999-99-99")}));
