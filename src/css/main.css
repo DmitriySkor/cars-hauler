@@ -37,3 +37,41 @@ a:hover {
     text-decoration: none;
     background-color: transparent;
 }
+
+::-webkit-input-placeholder {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #191C2F;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #191C2F;
+    opacity: 1;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #191C2F;
+    opacity: 1;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #191C2F;
+    opacity: 1;
+}
