@@ -15,8 +15,33 @@ document.getElementById("sub_menu_link-2").onclick = function (e) {
 
 // Инициализация owlCarousel
 $(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
-});
+    let elems = $('.item').length;
+    //console.log(elems);
+
+    if(elems >=6){
+        $(".carousel-reviews").owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:6
+                }
+            }
+        });
+    } else {
+        $('.carousel-reviews').trigger('destroy.owl.carousel');
+        //console.log(123123)
+    }
+
+
+
 
 // Инициализация jQueryFormStyler
 // Для активации плагина примените метод .styler к тегам, которые хотите стилизовать
@@ -25,19 +50,21 @@ $(document).ready(function () {
 // поле для выбора файла <input type="file">.
 // поле для ввода чисел <input type="number">.
 // раскрывающийся список <select>;
-(function ($) {
-    $(function () {
-        $('input, select').styler();
-    });
-})(jQuery);
+//     (function ($) {
+//         $(function () {
+//             $('input, select').styler();
+//         });
+//     })(jQuery);
 
 // Инициализация Fancybox
-$().fancybox({
-    selector: '[data-fancybox="gallery"]',
-    loop: true
-});
+//     $().fancybox({
+//         selector: '[data-fancybox="gallery"]',
+//         loop: true
+//     });
 
 //Инициализация маски ввода телефона
-jQuery(function ($) {
-    $(".masked-input").mask("+38 ( 999 ) 999-99-99");
+//     jQuery(function ($) {
+//         $(".masked-input").mask("+38 ( 999 ) 999-99-99");
+//     });
+
 });

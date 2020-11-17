@@ -75,3 +75,7 @@ a:hover {
     color: #191C2F;
     opacity: 1;
 }
+
+.owl-carousel {
+    display: flex;
+}
