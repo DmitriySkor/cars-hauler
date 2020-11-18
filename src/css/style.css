@@ -350,8 +350,80 @@ a.head__button:hover {
     margin-top: 50px;
 }
 
+.contact__form_mail {
+    display: flex;
+    align-content: center;
+    height: auto;
+    min-height: 36px;
+}
 
+.contact__form_mail_ico {
+    margin-right: 15px;
+}
 
+.form__mail_addr {
+    display: flex;
+    flex-direction: column;
+}
 
+.form__mail_addr-head {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #191C2F;
+    margin-top: -2px;
+    margin-bottom: 2px;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 
+.form__mail_addr-text span:nth-child(1) {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    text-transform: capitalize;
+    color: #3C3B6E;
+    margin-top: 2px;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 
+.form__mail_addr-text span:nth-child(2) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    text-transform: capitalize;
+    color: #3C3B6E;
+    margin-top: 2px;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.form__mail_ico svg path {
+    fill: #3C3B6E;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a.head__meet:hover .head__meet_ico svg path {
+    fill: #B22234;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a.head__meet:hover .head__meet_addr-head {
+    color: #BDBDBD;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a.head__meet:hover .head__meet_addr-text span:nth-child(1) {
+    color: #B22234;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a.head__meet:hover .head__meet_addr-text span:nth-child(2) {
+    color: #3C3B6E;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
