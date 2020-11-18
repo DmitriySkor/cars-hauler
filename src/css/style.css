@@ -348,3 +348,49 @@ a.head__button:hover {
     position: absolute;
     bottom: 0;
 }
+
+
+/* Our team section - main page */
+
+.our_team__section{
+    margin-top: 100px;
+    margin-bottom: 71px;
+}
+
+.our_team__left{
+    width: 100%;
+    height: 100%;
+    padding-top:96px;
+    padding-bottom: 96px;
+}
+
+.our_team__left h4{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: #191C2F;
+    margin-bottom: 15px;
+}
+
+.our_team__left h2{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    color: #191C2F;
+    margin-bottom: 30px;
+}
+
+.our_team__left p{
+    font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 23px;
+}
+
+.our_team_right{
+    box-shadow: -25px 0px 45px -25px rgba(0, 0, 0, 0.25);
+}
