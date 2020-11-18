@@ -308,45 +308,70 @@ a.head__button:hover {
 
 /*Contact Form*/
 
-.contact_form_wrap{
+.contact_form_wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.contact__form{
-    background: #3C3B6E;
+.contact__form {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 667px;
 }
 
-.contact__form_content{
+.contact__form_bgl {
+    display: block;
+    background: #3C3B6E;
+    width: 50%;
+    height: auto;
+    min-height: 667px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contact__form_bgr {
+    display: block;
+    background: #FFFFFF;
+    width: 50%;
+    height: auto;
+    min-height: 667px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contact__form_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.form_content_title{
+.form_content_title {
     font-size: 36px;
     font-style: normal;
     font-weight: 900;
-    color:#ffffff;
+    color: #ffffff;
     padding-top: 100px;
     margin-bottom: 35px;
 }
 
-.form_content_subtitle{
+.form_content_subtitle {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     color: #ffffff;
 }
 
-.contact__form_left{
+.contact__form_left {
     background: #ffffff;
 }
 
-.contact_form__connect{
+.contact_form__connect {
     margin-top: 50px;
 }
 

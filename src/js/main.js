@@ -16,7 +16,6 @@ document.getElementById("sub_menu_link-2").onclick = function (e) {
 // Инициализация owlCarousel
 $(document).ready(function () {
     let elems = $('.item').length;
-    //console.log(elems);
 
     if(elems >=5){
         $(".carousel-reviews").owlCarousel({
@@ -37,7 +36,6 @@ $(document).ready(function () {
         });
     } else {
         $('.carousel-reviews').trigger('destroy.owl.carousel');
-        //console.log(123123)
     }
 
 
