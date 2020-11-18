@@ -305,3 +305,53 @@ a.head__button:hover {
     top: 0;
     right: 0;
 }
+
+/*Contact Form*/
+
+.contact_form_wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__form{
+    background: #3C3B6E;
+}
+
+.contact__form_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form_content_title{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    color:#ffffff;
+    padding-top: 100px;
+    margin-bottom: 35px;
+}
+
+.form_content_subtitle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.contact__form_left{
+    background: #ffffff;
+}
+
+.contact_form__connect{
+    margin-top: 50px;
+}
+
+
+
+
+
+
