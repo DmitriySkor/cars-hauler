@@ -558,7 +558,7 @@ a.preview:hover .learn-more {
     width: 100%;
     height: auto;
     min-height: 300px;
-    background-image: url(/img/get-instant-bg.jpg);
+    background-image: url(../img/get-instant-bg.jpg);
     background-position: top, center;
     background-repeat: no-repeat;
 }
@@ -637,4 +637,105 @@ a.preview:hover .learn-more {
     background:#ffffff;
     color: #3C3B6E;
     transition: .3s cubic-bezier(.25,.1,.25,1);
+}
+
+/*Our reviews*/
+.contain-our_reviews {
+    padding: 100px 0;
+    background: #F9F9FE;
+}
+
+.our__reviews_name h4 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 220%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #191C2F;
+    margin-bottom: 15px;
+}
+
+.our__reviews_head h3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 130%;
+    color: #191C2F;
+}
+
+.our__reviews_text {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.our__reviews_text p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #191C2F;
+    margin-bottom: 5px;
+}
+
+.carousel-reviews2 {
+    margin-top: 60px;
+    width: calc(100% + 74px) !important;
+    margin-left: -37px;
+}
+
+.reviews_block2 {
+    padding: 23px;
+    background: #fff;
+}
+
+.reviews__star {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.reviews__star img {
+    width: 17px !important;
+    height: auto;
+    margin-right: 10px;
+}
+
+.reviews__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #191C2F;
+    margin-top: 25px;
+}
+
+.reviews__name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #33475B;
+    margin-top: 25px;
+}
+
+.reviews__position{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #33475B;
+}
+
+.reviews__logo {
+    margin-top: 6px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reviews__logo img {
+    width: inherit !important;
 }

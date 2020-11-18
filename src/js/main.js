@@ -13,8 +13,9 @@ document.getElementById("sub_menu_link-2").onclick = function (e) {
     document.getElementById("sub_menu_link-ul-3").classList.toggle("active")
 }
 
-// Инициализация owlCarousel
+
 $(document).ready(function () {
+    // Инициализация owlCarousel 1
     let elems = $('.item').length;
 
     if (elems >= 5) {
@@ -38,6 +39,23 @@ $(document).ready(function () {
         $('.carousel-reviews').trigger('destroy.owl.carousel');
     }
 
+    // Инициализация owlCarousel 2
+    $(".carousel-reviews2").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
 
 // Инициализация jQueryFormStyler
 // Для активации плагина примените метод .styler к тегам, которые хотите стилизовать
