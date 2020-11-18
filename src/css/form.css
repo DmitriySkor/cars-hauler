@@ -1,0 +1,194 @@
+/*Contact Form*/
+.contact_form_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__form {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 667px;
+}
+
+.contact__form_bgl {
+    display: block;
+    background: #3C3B6E;
+    width: 50%;
+    height: auto;
+    min-height: 667px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contact__form_bgr {
+    display: block;
+    background: #FFFFFF;
+    width: 50%;
+    height: auto;
+    min-height: 667px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contact__form_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form_content_title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    color: #ffffff;
+    padding-top: 100px;
+    margin-bottom: 35px;
+}
+
+.form_content_subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.contact__form_left {
+    background: #ffffff;
+    width: 100%;
+    max-width: 512px;
+    padding: 70px 76px 54px;
+}
+
+.contact_form__connect {
+    margin-top: 50px;
+}
+
+.contact__form_mail {
+    display: flex;
+    align-content: center;
+    height: auto;
+    min-height: 36px;
+}
+
+.contact__form_mail_ico {
+    margin-right: 15px;
+}
+
+.form__mail_addr {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__mail_addr-head {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #191C2F;
+    margin-top: -2px;
+    margin-bottom: 2px;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a.form__meet {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.form__meet_ico {
+    margin-right: 35px;
+}
+
+.form__meet_addr {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__meet_addr-form {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    margin-top: -9px;
+    margin-bottom: 5px;
+}
+
+.form__meet_addr-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.form__meet_ico svg path {
+    fill: #FFFFFF;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a.form__meet:hover .form__meet_ico svg path {
+    fill: #EEB300;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a.form__meet:hover .form__meet_addr-text {
+    color: #EEB300;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a.form__call {
+    display: flex;
+}
+
+.form__call_ico {
+    margin-right: 35px;
+}
+
+.form__call_number {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__call_number span:nth-child(1) {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    margin-top: -9px;
+    margin-bottom: 5px;
+}
+
+.form__call_number span:nth-child(2) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.form__call_ico svg path {
+    fill: #FFFFFF;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a.form__call:hover .form__call_ico svg path {
+    fill: #EEB300;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+a.form__call:hover .form__call_number span:nth-child(2) {
+    color: #EEB300;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}

@@ -13,11 +13,11 @@ document.getElementById("sub_menu_link-2").onclick = function (e) {
     document.getElementById("sub_menu_link-ul-3").classList.toggle("active")
 }
 
-// Инициализация owlCarousel
-$(document).ready(function () {
-    let elems = $('.item').length;
 
-    if(elems >=6){
+$(document).ready(function () {
+    // Инициализация owlCarousel
+    let elems = $('.item').length;
+        if(elems >=6){
         $(".carousel-reviews").owlCarousel({
             loop:true,
             margin:10,
