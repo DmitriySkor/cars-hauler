@@ -18,7 +18,7 @@ $(document).ready(function () {
     let elems = $('.item').length;
     //console.log(elems);
 
-    if(elems >=6){
+    if(elems >=5){
         $(".carousel-reviews").owlCarousel({
             loop:true,
             margin:10,
