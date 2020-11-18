@@ -305,3 +305,46 @@ a.head__button:hover {
     top: 0;
     right: 0;
 }
+
+/* Top Review */
+.contain-reviews{
+    background: #F9F9FE;
+}
+
+.carousel-reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 255px;
+    min-height: 126px;
+    margin: 100px 30px;
+    position: relative;
+}
+
+.reviews_block .img_review{
+    width:auto !important;
+    max-width: 109px;
+    height: auto;
+    max-height: 45px;
+    margin-bottom: 35px;
+}
+
+.reviews_block .text_review{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #3C3B6E;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0;
+}
