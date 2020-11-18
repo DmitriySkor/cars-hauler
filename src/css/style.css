@@ -550,3 +550,91 @@ a.preview:hover .learn-more {
     opacity: 1;
     transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
+
+
+/*Get instant section*/
+
+.get_install__section{
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    background-image: url(/img/get-instant-bg.jpg);
+    background-position: top, center;
+    background-repeat: no-repeat;
+}
+
+.get_instant__text{
+    width: 100%;
+    min-width: 520px;
+    height: 100%;
+    min-height: 300px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 50px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.get_instant_btn{
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.get_instant_btn_calc{
+    width: 275px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    color: #3C3B6E;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    box-shadow: 0px 25px 25px -15px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    transition: .3s cubic-bezier(.25,.1,.25,1);
+}
+
+.get_instant_btn_calc:hover{
+    background:#EEB300;
+    color: #ffffff;
+    transition: .3s cubic-bezier(.25,.1,.25,1);
+}
+
+.get_instant_btn_call{
+    width: 260px;
+    height: 60px;
+    border: 1px solid #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    box-shadow: 0px 25px 25px -15px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    transition: .3s cubic-bezier(.25,.1,.25,1);
+}
+
+.get_instant_btn_call:hover{
+    background:#ffffff;
+    color: #3C3B6E;
+    transition: .3s cubic-bezier(.25,.1,.25,1);
+}
