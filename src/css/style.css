@@ -201,7 +201,7 @@ a.head__button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 550px;
 }
 
@@ -210,10 +210,8 @@ a.head__button:hover {
     font-weight: 900;
     font-size: 48px;
     line-height: 130%;
-    text-align: center;
     text-transform: capitalize;
-    color: #fff;
-    margin-bottom: 15px;
+    color: #FFFFFF;
 }
 
 .start h2 {
@@ -221,9 +219,8 @@ a.head__button:hover {
     font-weight: normal;
     font-size: 20px;
     line-height: 150%;
-    text-align: center;
     color: #FFFFFF;
-    margin-bottom: 35px;
+    margin-top: 15px;
 }
 
 .start form {

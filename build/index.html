@@ -9,12 +9,12 @@
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -165,25 +165,82 @@
 <div class="contain-start" style="background-image: url(img/bg-1.jpg);">
     <div class="container">
         <div class="row justify-content-lg-center">
-            <div class="col-lg-8">
+            <div class="col-md-8">
                 <div class="start">
-                    <h1>Supreme Quality<br>of Car Transport in the States.</h1>
+                    <h1>Supreme Quality <br>of Car Transport in the States.</h1>
                     <h2>We take the US’ Auto Shipping Service to the Highest Level.</h2>
-                    <form>
-                        <div class="form-row">
-                            <div class="col-deliver">
-                                <label class="deliver-label" for="deliver_from">Delivery from</label>
-                                <input type="text" class="deliver-input" id="deliver_from" placeholder="Enter Zip Code or City">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="multiform-contain">
+                    <div class="multiform">
+                        <form method="post" action="#">
+                            <div class="step">
+                                <div class="step__head">
+                                    Get Your Quote<br>
+                                    for car Delivery
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-multiform">
+                                        <label class="multiform-label" for="multiform_from">Delivery from</label>
+                                        <input type="text" class="multiform-input" id="multiform_from" placeholder="Enter Zip Code or City">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-multiform">
+                                        <label class="multiform-label" for="multiform_to">Delivery to</label>
+                                        <input type="text" class="multiform-input" id="multiform_to" placeholder="Enter Zip Code or City">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-multiform">
+                                        <label class="multiform-label" for="datepicker">First Available Date</label>
+                                        <input type="text" class="multiform-input" id="datepicker" placeholder="Enter Delivery Date">
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="custom-checkbox" type="checkbox" id="delivery-1">
+                                    <label class="multiform-label-check" for="delivery-1">Enclosed Truck Delivery</label>
+                                </div>
+                                <a href="#" class="multiform-btn next">go to Vehicle Details</a>
                             </div>
-                            <div class="col-deliver">
-                                <label class="deliver-label" for="deliver_to">Delivery from</label>
-                                <input type="text" class="deliver-input" id="deliver_to" placeholder="Enter Zip Code or City">
+                            <div class="step">
+                                <div class="progress__line_one"></div>
+                                <div class="step_number">
+                                    <a href="#" class="back step_number_txt active">1</a>
+                                    <a href="#" class="step_number_txt">2</a>
+                                    <a href="#" class="step_number_txt">3</a>
+                                </div>
+                                <a href="#" class="back">Назад</a>
+                                <a href="#" class="next">Следующий шаг</a>
                             </div>
-                            <div class="col-deliver-btn">
-                                <button type="submit" class="deliver-btn">Shipping details</button>
+                            <div class="step">
+                                <div class="progress__line_two"></div>
+                                <div class="step_number">
+                                    <a href="#" class="back step_number_txt active">1</a>
+                                    <a href="#" class="back step_number_txt active">2</a>
+                                    <a href="#" class="step_number_txt">3</a>
+                                </div>
+                                <a href="#" class="back">Назад</a>
+                                <a href="#" class="next">Следующий шаг</a>
                             </div>
-                        </div>
-                    </form>
+                            <div class="step">
+                                <div class="progress__line_tri"></div>
+                                <div class="step_number">
+                                    <a href="#" class="back step_number_txt active">1</a>
+                                    <a href="#" class="back step_number_txt active">2</a>
+                                    <a href="#" class="back step_number_txt active">3</a>
+                                </div>
+                                <a href="#" class="back">Назад</a>
+                                <input type="submit" value="Зарегистрироваться">
+                            </div>
+                            <!--
+                            <p class="talign">
+                                <a href="#" class="back">Назад</a>
+                            </p>
+                            -->
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1333,11 +1390,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 

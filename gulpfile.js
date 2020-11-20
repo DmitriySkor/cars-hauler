@@ -36,6 +36,7 @@ const cssFiles = [
     './src/css/menu.css',
     './src/css/style.css',
     './src/css/form.css',
+    './src/css/multiform.css',
     './src/css/footer.css',
     './src/css/media.css'
 ];
