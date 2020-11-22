@@ -159,7 +159,8 @@ a.multiform-btn {
     align-items: center;
     padding: 0;
     border: none;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     background: radial-gradient(73.27% 514.54% at 24.53% 34.17%, #23234a 0, #3c3b6e 100%);
     font-style: normal;
     font-weight: 400;
@@ -268,19 +269,110 @@ a.step_number_txt {
     margin-right: 70px;
 }
 
-a.step_number_txt:last-child{
+a.step_number_txt:last-child {
     margin-right: 0;
 }
 
-a.step_number_txt.active{
+a.step_number_txt.active {
     color: #6FCF97;
     border: 2px solid #6FCF97;
 }
 
-a.step_number_txt.active:before{
+a.step_number_txt.active:before {
     content: url("../img/ico-active-step.svg");
     position: absolute;
     right: -3px;
     bottom: -3px;
 }
 
+a.step_number_txt.disabled {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3C3B6E;
+    opacity: 0.5;
+}
+
+.multiform-select {
+    width: 100%;
+    margin: 0 0 0 -4px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3C3B6E;
+
+    appearance: none;
+    background: url(../img/ico-checkmark-down.svg) 100% 0 no-repeat;
+    outline: 0;
+}
+
+.multiform-select option {
+    margin: 0;
+    padding: 0;
+}
+
+.multiform-label-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 150%;
+    text-align: center;
+    color: #3C3B6E;
+    margin: 10px 11px 15px;
+}
+
+.multiform-label-text a{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 150%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #3C3B6E;
+}
+
+.multiform-label-check-green{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 130%;
+    color: #3C3B6E;
+}
+
+input.multiform-btn {
+    width: calc(100% - 16px);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: radial-gradient(73.27% 514.54% at 24.53% 34.17%,#23234a 0,#3c3b6e 100%);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s cubic-bezier(.25,.1,.25,1);
+    margin-left: 8px;
+}
+
+input.multiform-btn .green {
+    background: #6FCF97;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+input.multiform-btn:hover {
+    background: radial-gradient(100% 940.44% at 0% 0%, #B22234 0%, #DA2C42 100%);
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}

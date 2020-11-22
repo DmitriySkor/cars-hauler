@@ -57,6 +57,100 @@ $(document).ready(function () {
         }
     });
 
+    let s1 = document.getElementById("multiform").getElementsByClassName('step')[0];
+    console.log(s1);
+
+    let s2 = document.getElementById("multiform").getElementsByClassName('step')[1];
+    console.log(s2);
+
+    let s3 = document.getElementById("multiform").getElementsByClassName('step')[2];
+    console.log(s3);
+
+    let s4 = document.getElementById("multiform").getElementsByClassName('step')[3];
+    console.log(s4);
+
+
+    // $(".l1-1").click(function (e) {	// Событие клика на маленькое изображение
+    //     e.preventDefault();
+    //     console.log(123);
+    //     s1.style.display = "block";
+    //     s2.style.display = "none";
+    //     s3.style.display = "none";
+    //     s4.style.display = "none";
+    // });
+    //
+    // $(".l1-2").click(function () {	// Событие клика на маленькое изображение
+    //     e.preventDefault();
+    //     console.log(456);
+    //     s1.style.display = "none";
+    //     s2.style.display = "block";
+    //     s3.style.display = "none";
+    //     s4.style.display = "none";
+    // });
+    //
+    // $(".l1-3").click(function () {	// Событие клика на маленькое изображение
+    //     e.preventDefault();
+    //     console.log(789);
+    //     s1.style.display = "none";
+    //     s2.style.display = "none";
+    //     s3.style.display = "block";
+    //     s4.style.display = "none";
+    // });
+    //
+    // $(".l2-1").click(function (e) {	// Событие клика на маленькое изображение
+    //     e.preventDefault();
+    //     console.log(123);
+    //     s1.style.display = "block";
+    //     s2.style.display = "none";
+    //     s3.style.display = "none";
+    //     s4.style.display = "none";
+    // });
+    //
+    // $(".l2-2").click(function () {	// Событие клика на маленькое изображение
+    //     e.preventDefault();
+    //     console.log(456);
+    //     s1.style.display = "none";
+    //     s2.style.display = "block";
+    //     s3.style.display = "none";
+    //     s4.style.display = "none";
+    // });
+    //
+    // $(".l2-3").click(function () {	// Событие клика на маленькое изображение
+    //     e.preventDefault();
+    //     console.log(789);
+    //     s1.style.display = "none";
+    //     s2.style.display = "none";
+    //     s3.style.display = "block";
+    //     s4.style.display = "none";
+    // });
+    //
+    // $(".l3-1").click(function (e) {	// Событие клика на маленькое изображение
+    //     e.preventDefault();
+    //     console.log(123);
+    //     s1.style.display = "block";
+    //     s2.style.display = "none";
+    //     s3.style.display = "none";
+    //     s4.style.display = "none";
+    // });
+    //
+    // $(".l3-2").click(function () {	// Событие клика на маленькое изображение
+    //     e.preventDefault();
+    //     console.log(456);
+    //     s1.style.display = "none";
+    //     s2.style.display = "block";
+    //     s3.style.display = "none";
+    //     s4.style.display = "none";
+    // });
+    //
+    // $(".l3-3").click(function () {	// Событие клика на маленькое изображение
+    //     e.preventDefault();
+    //     console.log(789);
+    //     s1.style.display = "none";
+    //     s2.style.display = "none";
+    //     s3.style.display = "block";
+    //     s4.style.display = "none";
+    // });
+
 
     // Multi-step form
     let steps = $("form").children(".step"); // находим все шаги формы
@@ -91,6 +185,8 @@ $(document).ready(function () {
     $("#datepicker").datepicker({
         minDate: 0
     });
+
+
 
 // Инициализация jQueryFormStyler
 // Для активации плагина примените метод .styler к тегам, которые хотите стилизовать

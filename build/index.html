@@ -174,7 +174,8 @@
             <div class="col-md-4">
                 <div class="multiform-contain">
                     <div class="multiform">
-                        <form method="post" action="#">
+                        <form id="multiform" action="#">
+                
                             <div class="step">
                                 <div class="step__head">
                                     Get Your Quote<br>
@@ -204,36 +205,148 @@
                                 </div>
                                 <a href="#" class="multiform-btn next">go to Vehicle Details</a>
                             </div>
+                
                             <div class="step">
                                 <div class="progress__line_one"></div>
                                 <div class="step_number">
-                                    <a href="#" class="back step_number_txt active">1</a>
-                                    <a href="#" class="step_number_txt">2</a>
-                                    <a href="#" class="step_number_txt">3</a>
+                                    <a href="#" class="l1-1 back step_number_txt active">1</a>
+                                    <a href="#" class="l1-2 step_number_txt">2</a>
+                                    <a href="#" class="l1-3 step_number_txt disabled">3</a>
                                 </div>
-                                <a href="#" class="back">Назад</a>
-                                <a href="#" class="next">Следующий шаг</a>
+                                <div class="form-row">
+                                    <div class="col-multiform">
+                                        <label class="multiform-label" for="vehicle_year">Vehicle Year</label>
+                                        <select class="multiform-select" id="vehicle_year">
+                                            <option disabled selected>Select</option>
+                                            <option>2020</option>
+                                            <option>2019</option>
+                                            <option>2018</option>
+                                            <option>2017</option>
+                                            <option>2016</option>
+                                            <option>2015</option>
+                                            <option>2014</option>
+                                            <option>2013</option>
+                                            <option>2012</option>
+                                            <option>2011</option>
+                                            <option>2010</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-multiform">
+                                        <label class="multiform-label" for="vehicle_mark">Vehicle Mark</label>
+                                        <select class="multiform-select" id="vehicle_mark">
+                                            <option disabled selected>Select</option>
+                                            <option>Acura</option>
+                                            <option>Alfa Romeo</option>
+                                            <option>Aston Martin</option>
+                                            <option>Audi</option>
+                                            <option>Bentley</option>
+                                            <option>BMW</option>
+                                            <option>Bugatti</option>
+                                            <option>Buick</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-multiform">
+                                        <label class="multiform-label" for="vehicle_model">Vehicle Model</label>
+                                        <select class="multiform-select" id="vehicle_model">
+                                            <option disabled selected>Select</option>
+                                            <option>Cadenza</option>
+                                            <option>Carens</option>
+                                            <option>Carnival</option>
+                                            <option>Ceed</option>
+                                            <option>Cerato</option>
+                                            <option>K2 Cross</option>
+                                            <option>K9</option>
+                                            <option>K900</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="checkbox">
+                                        <input class="custom-checkbox" type="checkbox" id="delivery-2">
+                                        <label class="multiform-label-check" for="delivery-2">Operable</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="custom-checkbox" type="checkbox" id="delivery-3">
+                                        <label class="multiform-label-check" for="delivery-3">Top Load</label>
+                                    </div>
+                                </div>
+                                <a href="#" class="multiform-btn next">Contact Details</a>
                             </div>
+                
                             <div class="step">
                                 <div class="progress__line_two"></div>
                                 <div class="step_number">
-                                    <a href="#" class="back step_number_txt active">1</a>
-                                    <a href="#" class="back step_number_txt active">2</a>
-                                    <a href="#" class="step_number_txt">3</a>
+                                    <a href="#" class="l2-1 back step_number_txt active">1</a>
+                                    <a href="#" class="l2-2 back step_number_txt active">2</a>
+                                    <a href="#" class="l2-3 step_number_txt disabled" >3</a>
                                 </div>
-                                <a href="#" class="back">Назад</a>
-                                <a href="#" class="next">Следующий шаг</a>
+                                <div class="form-row">
+                                    <div class="col-multiform">
+                                        <label class="multiform-label" for="multiform_mail_1">Quote Send To</label>
+                                        <input type="text" class="multiform-input" id="multiform_mail_1" placeholder="Your Mail">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-multiform">
+                                        <label class="multiform-label" for="multiform_mail_2">Quote Send To</label>
+                                        <input type="text" class="multiform-input" id="multiform_mail_2" placeholder="Your Mail">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="checkbox">
+                                        <input class="custom-checkbox" type="checkbox" id="delivery-4">
+                                        <label class="multiform-label-check-green" for="delivery-4">Door-to-Door Service</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="custom-checkbox" type="checkbox" id="delivery-5">
+                                        <label class="multiform-label-check-green" for="delivery-5">No Hidden Fees</label>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="multiform-label-text">
+                                        By providing your information, you agree to our <a href="#">privacy policy</a> and SMS notifications Up to 8msgs/mo. Msg&date rates may apply. Text Stop to unsibscribe
+                                    </div>
+                                </div>
+                                <a href="#" class="multiform-btn next">Calculate Shipping</a>
                             </div>
+                
                             <div class="step">
                                 <div class="progress__line_tri"></div>
                                 <div class="step_number">
-                                    <a href="#" class="back step_number_txt active">1</a>
-                                    <a href="#" class="back step_number_txt active">2</a>
-                                    <a href="#" class="back step_number_txt active">3</a>
+                                    <a href="#" class="l3-1 back step_number_txt active">1</a>
+                                    <a href="#" class="l3-2 back step_number_txt active">2</a>
+                                    <a href="#" class="l3-3 back step_number_txt active">3</a>
                                 </div>
-                                <a href="#" class="back">Назад</a>
-                                <input type="submit" value="Зарегистрироваться">
+                                <div class="form-row">
+                                    <div class="col-multiform">
+                                        <label class="multiform-label" for="multiform_mail_3">Quote Send To</label>
+                                        <input type="text" class="multiform-input" id="multiform_mail_3" placeholder="Your Mail">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-multiform">
+                                        <label class="multiform-label" for="multiform_mail_4">Quote Send To</label>
+                                        <input type="text" class="multiform-input" id="multiform_mail_4" placeholder="Your Mail">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="checkbox">
+                                        <input class="custom-checkbox" type="checkbox" id="delivery-6">
+                                        <label class="multiform-label-check" for="delivery-6">Call Me Before Transportation</label>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="multiform-label-text">
+                                        By providing your information, you agree to our <a href="#">privacy policy</a> and SMS notifications Up to 8msgs/mo. Msg&date rates may apply. Text Stop to unsibscribe
+                                    </div>
+                                </div>
+                                <input type="submit" class="multiform-btn green next" value="Calculate Shipping">
                             </div>
+                
                             <!--
                             <p class="talign">
                                 <a href="#" class="back">Назад</a>
