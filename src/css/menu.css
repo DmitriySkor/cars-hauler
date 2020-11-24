@@ -359,3 +359,8 @@ a.mobile-menu-open.active span:after {
     width: 100% !important;
     margin-top: 10px !important;
 }
+
+#contain-slide {
+    display: none;
+}
+

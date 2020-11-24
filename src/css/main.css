@@ -42,7 +42,7 @@ html body {
 }
 
 .owl-carousel {
-    display: flex;
+    display: block;
 }
 
 a {

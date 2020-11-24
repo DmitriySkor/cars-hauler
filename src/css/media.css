@@ -104,10 +104,326 @@
     .start h1 {
         font-size: 36px;
     }
+
+    a.services__link {
+        width: calc(50% - 2px);
+    }
+
+    #contain-tabs {
+        display: none;
+    }
+
+    #contain-slide {
+        display: flex;
+    }
+
+    .tabs__content_info {
+        padding-right: 0;
+    }
+
+    .tabs__content_info-head {
+        margin-top: 30px;
+    }
+
+    .tabs__content_info-head h2 {
+        font-size: 20px;
+    }
+
+    .tabs__content_imag img {
+        box-shadow: none;
+    }
+
+    .tabs__content_info-text p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        display: flex;
+        align-items: flex-end;
+        color: #191C2F;
+        margin-top: 15px;
+    }
+
+    .step__link_info-text {
+        margin-left: 30px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 130%;
+        color: #3C3B6E;
+    }
+
+    .contact__form_bgl {
+        width: 100%;
+    }
+
+    .contact__form_bgr {
+        display: none;
+    }
+
+    .contact_form__connect {
+        margin-bottom: 75px;
+    }
+
+    .contact__form_left {
+        max-width: 100%;
+        margin-bottom: 75px;
+    }
+
+    .footer__contact_text {
+        max-width: 455px;
+        padding-right: 290px;
+    }
+
+    .footer__menu_block {
+        margin-right: 50px;
+        width: calc(50% - 50px);
+        max-width: inherit;
+    }
+
+    .footer__menu_block1 {
+        border-right: none;
+    }
+
+    .footer__menu .footer__menu_block:nth-child(1),
+    .footer__menu .footer__menu_block:nth-child(2){
+        margin-bottom: 50px;
+    }
+
+    .copy_section_wrap {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .copy__left_link {
+        justify-content: center;
+    }
+
+    .copy__right_link {
+        justify-content: center;
+    }
+
 }
 
 @media (min-width: 0) and (max-width: 767px) {
+    .contain-start {
+        padding: 130px 0 75px;
+    }
 
+    .contain-start {
+        width: 100%;
+        height: auto;
+    }
+
+    .start {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: inherit;
+    }
+
+    .start h1 {
+        text-align: center;
+    }
+
+    .start h2 {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .reviews_block {
+        max-width: 100%;
+        margin: 75px auto;
+    }
+
+    .our__services_name h4 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 220%;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #191C2F;
+    }
+
+    .our__services_head h3 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 120%;
+        color: #191C2F;
+    }
+
+    .our__services_text{
+        min-height: auto;
+    }
+
+    .our__services_text p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        display: flex;
+        align-items: flex-end;
+        color: #191C2F;
+    }
+
+    a.services__link {
+        width: 100%;
+        min-height: 240px;
+    }
+
+    .services__link_overlay {
+        opacity: 1;
+    }
+
+    a.services__link:hover {
+        border: none;
+    }
+
+    .services__link_head {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 120%;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+    }
+
+    a.services__link:hover .services__link_head {
+        margin-bottom: 0;
+    }
+
+    .services__link_text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 150%;
+        color: #FFFFFF;
+
+        z-index: 1;
+        height: auto;
+        opacity: 1;
+        margin-top: 15px;
+        transition: .3s cubic-bezier(.25,.1,.25,1);
+    }
+
+    .our__reviews_name h4 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 220%;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #191C2F;
+    }
+
+    .our__reviews_head h3 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 120%;
+        color: #191C2F;
+    }
+
+    .our__reviews_text{
+        min-height: auto;
+    }
+
+    .our__reviews_text p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        display: flex;
+        align-items: flex-end;
+        color: #191C2F;
+    }
+
+    .our__works_name h4{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 220%;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #191C2F;
+    }
+
+    .our__works_head h4 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 120%;
+        color: #191C2F;
+    }
+
+    .our__works_text{
+        min-height: auto;
+    }
+
+    .our__works_text p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        display: flex;
+        align-items: flex-end;
+        color: #191C2F;
+    }
+
+    .our__works_name h4 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 220%;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #191C2F;
+    }
+
+    .our__works_head h3 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 120%;
+        color: #191C2F;
+    }
+
+    .step__name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .step__name_txt-name {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .step__name_txt-head {
+        text-align: center;
+    }
+
+    .step__text {
+        text-align: center;
+    }
+
+    .step__link_info a {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .step__link_info {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
 }
 
 @media (min-width: 0) and (max-width: 575px) {

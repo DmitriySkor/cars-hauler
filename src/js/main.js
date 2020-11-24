@@ -59,6 +59,7 @@ $(document).ready(function () {
         $('.carousel-reviews').trigger('destroy.owl.carousel');
     }
 
+
     // Инициализация owlCarousel 2
     $(".carousel-reviews2").owlCarousel({
         loop: true,
@@ -77,17 +78,47 @@ $(document).ready(function () {
         }
     });
 
-    let s1 = document.getElementById("multiform").getElementsByClassName('step')[0];
-    console.log(s1);
+    $(".carousel-types-of-delivery").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        navText: ["<img src='img/prev.svg' alt='img'>", "<img src='img/next.svg' alt='img'>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
 
-    let s2 = document.getElementById("multiform").getElementsByClassName('step')[1];
-    console.log(s2);
+    let screenWidth = document.querySelector("body").clientWidth;
 
-    let s3 = document.getElementById("multiform").getElementsByClassName('step')[2];
-    console.log(s3);
+    let navigationWidth = document.querySelector(".carousel-types-of-delivery").getElementsByClassName('owl-nav')[0];
+    navigationWidth.style.width = screenWidth + "px";
+    window.addEventListener('resize', function () {
+        navigationWidth.style.width = screenWidth + "px";
+    });
 
-    let s4 = document.getElementById("multiform").getElementsByClassName('step')[3];
-    console.log(s4);
+    let itemWidth = document.querySelector(".carousel-types-of-delivery").getElementsByClassName('owl-item');
+    console.log(itemWidth);
+
+
+    // let s1 = document.getElementById("multiform").getElementsByClassName('step')[0];
+    // console.log(s1);
+    //
+    // let s2 = document.getElementById("multiform").getElementsByClassName('step')[1];
+    // console.log(s2);
+    //
+    // let s3 = document.getElementById("multiform").getElementsByClassName('step')[2];
+    // console.log(s3);
+    //
+    // let s4 = document.getElementById("multiform").getElementsByClassName('step')[3];
+    // console.log(s4);
 
 
     // $(".l1-1").click(function (e) {	// Событие клика на маленькое изображение
@@ -234,10 +265,10 @@ $(document).ready(function () {
 });
 
 
-jQuery(document).ready(function() {
-    var btn = $('#backtotop');  
-     btn.on('click', function(e) {
-       e.preventDefault();
-       $('html, body').animate({scrollTop:0}, '300');
-     });
-  });
+jQuery(document).ready(function () {
+    var btn = $('#backtotop');
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: 0}, '300');
+    });
+});
