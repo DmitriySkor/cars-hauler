@@ -323,7 +323,7 @@ a.head__button:hover {
     width: 100%;
     max-width: 255px;
     min-height: 126px;
-    margin: 100px 30px;
+    margin: var(--main-padding) 30px;
     position: relative;
 }
 
@@ -350,7 +350,7 @@ a.head__button:hover {
 /* Our team section - main page */
 
 .our_team__section {
-    margin-top: 100px;
+    margin-top: var(--main-padding);
     margin-bottom: 71px;
 }
 
@@ -409,7 +409,7 @@ a.head__button:hover {
 
 /*Our Blog*/
 .contain-our_blog {
-    padding: 100px 0;
+    padding: var(--main-padding) 0;
 }
 
 .our__blog_name h4 {
@@ -644,7 +644,7 @@ a.preview:hover .learn-more {
 
 /*Our reviews*/
 .contain-our_reviews {
-    padding: 100px 0;
+    padding: var(--main-padding) 0;
     background: #F9F9FE;
 }
 
@@ -745,7 +745,7 @@ a.preview:hover .learn-more {
 
 /*Our services*/
 .contain-our_services {
-    padding: 100px 0;
+    padding: var(--main-padding) 0;
 }
 
 .our__services_name h4 {
@@ -942,11 +942,11 @@ a.services__link:hover .services__link_text {
 }
 
 .why_us__advantages {
-    margin-bottom: 100px;
+    margin-bottom: var(--main-padding);
 }
 
 .why_us_item_wrap {
-    margin-top: 100px;
+    margin-top: var(--main-padding);
 }
 
 .why_us__item {
@@ -1123,8 +1123,8 @@ a.tabs-link:hover {
 /* Our Company */
 
 .our_company__section {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: var(--main-padding);
+    margin-bottom: var(--main-padding);
 }
 
 /* .our_company__border{
@@ -1209,7 +1209,7 @@ a.tabs-link:hover {
 
 /* How It Works */
 .contain-our_works {
-    padding: 100px 0 0;
+    padding: var(--main-padding) 0 0;
 }
 
 .our__reviews_name h4 {

@@ -282,6 +282,7 @@ a.mobile-menu-open.active span:after {
 
 .mobile-menu.active {
     left: 0;
+    box-shadow: 25px 15px 45px -25px rgba(0,0,0,.25);
     transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 

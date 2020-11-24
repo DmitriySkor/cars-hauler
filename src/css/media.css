@@ -68,6 +68,10 @@
 }
 
 @media (min-width: 0) and (max-width: 991px) {
+    :root {
+        --main-padding: 75px;
+    }
+
     a.head__call {
         display: none;
     }
@@ -95,6 +99,10 @@
 
     a.mobile-menu-open {
         display: flex;
+    }
+
+    .start h1 {
+        font-size: 36px;
     }
 }
 
