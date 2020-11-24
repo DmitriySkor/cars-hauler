@@ -244,7 +244,7 @@ a.multiform-btn:before {
 .step_number {
     padding: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -265,12 +265,6 @@ a.step_number_txt {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-right: 70px;
-}
-
-a.step_number_txt:last-child {
-    margin-right: 0;
 }
 
 a.step_number_txt.active {
