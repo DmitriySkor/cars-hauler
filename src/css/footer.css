@@ -212,17 +212,17 @@ ul.footer__menu_item {
 .copy_section_wrap a{
     color: #ffffff;
     font-size: 14px;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .copy_section_wrap a:hover{
     color: #EEB300;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .copy_section_wrap a:hover span{
     color: #ffffff;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .copy__left_link{

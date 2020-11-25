@@ -169,14 +169,14 @@ a.multiform-btn {
     color: #fff;
     text-transform: uppercase;
     position: relative;
-    transition: .3s cubic-bezier(.25, .1, .25, 1);
+    transition: .5s cubic-bezier(.25, .1, .25, 1);
     margin-left: 8px;
 }
 
 
 .multiform-btn:hover {
     background: radial-gradient(100% 940.44% at 0% 0%, #B22234 0%, #DA2C42 100%);
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 
@@ -357,16 +357,16 @@ input.multiform-btn {
     color: #fff;
     text-transform: uppercase;
     position: relative;
-    transition: .3s cubic-bezier(.25,.1,.25,1);
+    transition: .5s cubic-bezier(.25,.1,.25,1);
     margin-left: 8px;
 }
 
 input.multiform-btn .green {
     background: #6FCF97;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 input.multiform-btn:hover {
     background: radial-gradient(100% 940.44% at 0% 0%, #B22234 0%, #DA2C42 100%);
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }

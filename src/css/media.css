@@ -3,7 +3,9 @@
 }
 
 @media (min-width: 0) and (max-width: 1440px) {
-
+    .back_to_top {
+        right: 8%;
+    }
 }
 
 @media (min-width: 0) and (max-width: 1366px) {
@@ -318,7 +320,7 @@
         height: auto;
         opacity: 1;
         margin-top: 15px;
-        transition: .3s cubic-bezier(.25, .1, .25, 1);
+        transition: .5s cubic-bezier(.25, .1, .25, 1);
     }
 
     .our__reviews_name h4 {
@@ -597,6 +599,10 @@
         width: 100% !important;
         margin-left: 0 !important;
     }
+
+    .our_company__text::before{
+        display: none;
+    }
 }
 
 @media (min-width: 0) and (max-width: 575px) {
@@ -604,7 +610,9 @@
 }
 
 @media (min-width: 0) and (max-width: 479px) {
-
+    .copy__left_link a {
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 0) and (max-width: 360px) {

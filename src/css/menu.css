@@ -60,22 +60,22 @@
     justify-content: center;
     align-items: center;
     background: transparent;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .menu__icon ul li a:hover {
     background: #B22234;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .menu__icon ul li a svg path {
     fill: #3C3B6E;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .menu__icon ul li a:hover svg path {
     fill: #FFFFFF;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 a.sub_menu_link svg {
@@ -85,12 +85,12 @@ a.sub_menu_link svg {
 
 a.sub_menu_link svg path {
     fill: #3C3B6E;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 a.sub_menu_link:hover svg path {
     fill: #B22234;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 #sub_menu_link-ul-1 {
@@ -122,13 +122,13 @@ a.sub_menu_link:hover svg path {
     padding: 30px 20px 49px 35px !important;
     min-height: 274px;
     opacity: 0;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .menu__text ul li .sub_menu_link-ul.active {
     z-index: 2;
     opacity: 1;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .menu__text ul li .sub_menu_link-ul li {
@@ -191,12 +191,12 @@ a.sub_menu_link:hover svg path {
     text-transform: capitalize;
     color: #FFFFFF;
     letter-spacing: 0;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .menu__text ul li .sub_menu_link-ul li a:hover {
     color: #EEB300;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 a.mobile-menu-open {
@@ -205,7 +205,7 @@ a.mobile-menu-open {
     height: 29px;
     justify-content: center;
     align-items: center;
-    margin-right: 22px;
+    /*margin-right: 22px;*/
 }
 
 a.mobile-menu-open span {
@@ -216,7 +216,7 @@ a.mobile-menu-open span {
     justify-content: center;
     align-items: center;
     background-color: #3C3B6E;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 a.mobile-menu-open span:before {
@@ -230,7 +230,7 @@ a.mobile-menu-open span:before {
     position: absolute;
     left: 0;
     top: -10px;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 a.mobile-menu-open span:after {
@@ -244,26 +244,26 @@ a.mobile-menu-open span:after {
     position: absolute;
     left: 0;
     top: 10px;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 a.mobile-menu-open.active span {
     background: transparent;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 a.mobile-menu-open.active span:before {
     transform: rotate(-45deg);
     left: 0;
     top: 0;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 a.mobile-menu-open.active span:after {
     transform: rotate(45deg);
     left: 0;
     top: 0;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .mobile-menu {
@@ -277,13 +277,13 @@ a.mobile-menu-open.active span:after {
     z-index: 4;
     padding: 20px;
     overflow-y: auto;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .mobile-menu.active {
     left: 0;
     box-shadow: 25px 15px 45px -25px rgba(0,0,0,.25);
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .mobile-menu-content {
