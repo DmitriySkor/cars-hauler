@@ -1390,3 +1390,93 @@ a.tabs-link:hover {
 .container.border_top {
     position: relative;
 }
+
+/*advantages*/
+
+.advantages-contain {
+    padding: var(--main-padding) 0 0;
+}
+
+.advantages{
+    margin-bottom: var(--main-padding);
+}
+
+.advantages_text h4{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 120%;
+    color: #191C2F;
+    margin-top: 35px;
+}
+
+.advantages_text p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: #191C2F;
+    margin-top: 15px;
+}
+
+/*paper*/
+.paper-contain {
+    padding: var(--main-padding) 0;
+}
+
+.paper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paper:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.paper__info{
+    padding: 80px;
+    background: #F9F9FE;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 580px);
+}
+
+.paper__info h4 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 220%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #191C2F;
+}
+
+.paper__info h3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 120%;
+    color: #191C2F;
+    margin-top: 15px;
+}
+
+.paper__info p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #191C2F;
+    margin-top: 30px;
+}
+
+.paper__imag {
+    display: block;
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+    min-height: 500px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}

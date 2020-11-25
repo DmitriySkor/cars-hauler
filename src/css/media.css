@@ -67,6 +67,14 @@
     .head__call_number span:nth-child(2) {
         font-size: 14px;
     }
+
+    .paper__imag {
+        max-width: 50%;
+    }
+
+    .paper__info {
+        width: 50%;
+    }
 }
 
 @media (min-width: 0) and (max-width: 991px) {
@@ -215,6 +223,21 @@
         justify-content: center;
     }
 
+    .paper {
+        flex-direction: column-reverse;
+    }
+
+    .paper:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+
+    .paper__imag {
+        max-width: 100%;
+    }
+
+    .paper__info {
+        width: 100%;
+    }
 }
 
 @media (min-width: 0) and (max-width: 767px) {
@@ -603,6 +626,45 @@
     .our_company__text::before{
         display: none;
     }
+
+    .paper__imag {
+        min-height: 300px;
+    }
+
+    .paper__info {
+        padding: 50px 20px;
+    }
+
+    .paper__info h4 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 220%;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #191C2F;
+    }
+
+    .paper__info h3 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 120%;
+        color: #191C2F;
+        margin-top: 15px;
+    }
+
+    .paper__info p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        display: flex;
+        align-items: flex-end;
+        color: #191C2F;
+        margin-top: 15px;
+    }
+
 }
 
 @media (min-width: 0) and (max-width: 575px) {
