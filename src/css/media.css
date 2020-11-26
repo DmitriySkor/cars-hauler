@@ -716,6 +716,29 @@
         color: #191C2F;
         margin-top: 15px;
     }
+
+    .other__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .other__info {
+        margin: 0 auto var(--main-padding);
+    }
+
+    .other__info_head {
+        text-align: center;
+    }
+
+    .other__info_text {
+        text-align: center;
+    }
+
+    .other__info_link {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 0) and (max-width: 575px) {
