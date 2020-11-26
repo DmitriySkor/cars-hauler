@@ -719,7 +719,17 @@
 }
 
 @media (min-width: 0) and (max-width: 575px) {
+    .foot_bread_crumbs ul li {
+        margin: 5px;
+    }
 
+    .foot_bread_crumbs ul li:first-child {
+        margin-right: 15px;
+    }
+
+    .foot_bread_crumbs ul li:last-child {
+        margin-left: 15px;
+    }
 }
 
 @media (min-width: 0) and (max-width: 479px) {
