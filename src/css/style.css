@@ -223,6 +223,17 @@ a.head__button:hover {
     margin-top: 15px;
 }
 
+.start.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start.text-center h1,
+.start.text-center h2{
+    text-align: center;
+}
+
 .start form {
     width: 100%;
     max-width: 730px;
