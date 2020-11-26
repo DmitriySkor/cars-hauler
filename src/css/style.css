@@ -1507,6 +1507,10 @@ a.tabs-link:hover {
     min-height: 500px;
 }
 
+.grey__block.changeling {
+    flex-direction: row-reverse;
+}
+
 .grey__block_info {
     background: #F9F9FE;
     padding: 84px;
