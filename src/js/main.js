@@ -14,23 +14,27 @@ document.getElementById("sub_menu_link-1").onclick = function (e) {
 
 document.getElementById("sub_menu_link-2").onclick = function (e) {
     e.preventDefault();
-    document.getElementById("sub_menu_link-ul-1").classList.remove("active")
-    document.getElementById("sub_menu_link-ul-2").classList.remove("active")
-    document.getElementById("sub_menu_link-ul-3").classList.toggle("active")
+    document.getElementById("sub_menu_link-ul-1").classList.remove("active");
+    document.getElementById("sub_menu_link-ul-2").classList.remove("active");
+    document.getElementById("sub_menu_link-ul-3").classList.toggle("active");
 }
 
 document.getElementById("m-sub_menu_link-1").onclick = function (e) {
     e.preventDefault();
-    document.getElementById("m-sub_menu_link-ul-1").classList.toggle("active")
-    document.getElementById("m-sub_menu_link-ul-2").classList.toggle("active")
-    document.getElementById("m-sub_menu_link-ul-3").classList.remove("active")
+    document.getElementById("m-sub_menu_link-1").classList.toggle("active");
+    document.getElementById("m-sub_menu_link-ul-1").classList.toggle("active");
+    document.getElementById("m-sub_menu_link-ul-2").classList.toggle("active");
+    document.getElementById("m-sub_menu_link-ul-3").classList.remove("active");
+    document.getElementById("m-sub_menu_link-2").classList.remove("active");
 }
 
 document.getElementById("m-sub_menu_link-2").onclick = function (e) {
     e.preventDefault();
-    document.getElementById("m-sub_menu_link-ul-1").classList.remove("active")
-    document.getElementById("m-sub_menu_link-ul-2").classList.remove("active")
-    document.getElementById("m-sub_menu_link-ul-3").classList.toggle("active")
+    document.getElementById("m-sub_menu_link-2").classList.toggle("active");
+    document.getElementById("m-sub_menu_link-ul-1").classList.remove("active");
+    document.getElementById("m-sub_menu_link-ul-2").classList.remove("active");
+    document.getElementById("m-sub_menu_link-ul-3").classList.toggle("active");
+    document.getElementById("m-sub_menu_link-1").classList.remove("active");
 }
 
 

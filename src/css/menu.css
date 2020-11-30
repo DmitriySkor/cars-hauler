@@ -82,6 +82,7 @@
 a.sub_menu_link svg {
     margin-left: 7px;
     margin-top: -2px;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 a.sub_menu_link svg path {
@@ -274,7 +275,8 @@ a.mobile-menu-open.active span:after {
     background: #FFFFFF;
     position: fixed;
     top: 0;
-    left: -300px;
+    left: inherit;
+    right: -300px;
     z-index: 4;
     padding: 20px;
     overflow-y: auto;
@@ -282,9 +284,9 @@ a.mobile-menu-open.active span:after {
 }
 
 .mobile-menu.active {
-    left: 0;
+    right: calc(100% - 300px);
     box-shadow: 25px 15px 45px -25px rgba(0,0,0,.25);
-    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: .5s cubic-bezier(.25,.1,.25,1);
 }
 
 .mobile-menu-content {
@@ -304,7 +306,8 @@ a.mobile-menu-open.active span:after {
 
 .mobile-menu a.head__button {
     display: flex;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .mobile-menu-list .menu__text ul {
@@ -323,6 +326,11 @@ a.mobile-menu-open.active span:after {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.sub_menu_link.active svg {
+    transform: rotate(-90deg);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .mobile-menu-list .menu__icon ul {

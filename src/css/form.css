@@ -210,7 +210,16 @@ input.form-line {
     height: 55px;
     padding: 17px 17px 17px 68px;
     display: flex;
+    opacity: 0.5;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
+
+input.form-line:focus,
+input.form-line:hover{
+    opacity: 1;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
 
 input.form-line::-webkit-input-placeholder {
     font-style: normal;
@@ -251,6 +260,14 @@ textarea.form-area {
     width: 100%;
     padding: 17px 17px 17px 68px;
     display: flex;
+    opacity: 0.5;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+textarea.form-area:focus,
+textarea.form-area:hover{
+    opacity: 1;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 textarea.form-area::-webkit-input-placeholder {

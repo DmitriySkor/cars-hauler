@@ -256,6 +256,17 @@
     .grey__block_info {
         width: 100%;
     }
+
+    .menu__text ul li .sub_menu_link-ul li,
+    .menu__text ul li .sub_menu_link-ul li a {
+        color: #191c2f;
+    }
+
+    #m-sub_menu_link-ul-1, #m-sub_menu_link-ul-2, #m-sub_menu_link-ul-3 {
+        background: #fff;
+        padding: 10px 15px !important;
+        min-height: auto;
+    }
 }
 
 @media (min-width: 0) and (max-width: 767px) {
@@ -586,7 +597,7 @@
     }
 
     .back_to_top {
-        right: 20px;
+        right: calc(50% - 80px);
     }
 
     .footer__contact_wrap {
@@ -622,12 +633,12 @@
     }
 
     .copy__left_link, .copy__right_link {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .carousel-types-of-delivery .step__link_info a {
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
 
     .carousel-reviews2 {
@@ -738,6 +749,52 @@
     .other__info_link {
         display: flex;
         justify-content: center;
+    }
+
+    .contain-info-link {
+        border-top: none;
+        border-bottom: 1px solid #3c3b6e;
+    }
+
+    .step__link {
+        border-top: none;
+        border-bottom: 1px solid #3c3b6e;
+    }
+
+    .our_company__link {
+        border-top: none;
+        border-bottom: 1px solid #3c3b6e;
+    }
+
+    .footer__logo_social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__contact_text {
+        text-align: center;
+    }
+
+    .footer__menu_title {
+        text-align: center;
+    }
+
+    .footer__menu_item li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy__right_link ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .copy__right_link ul li{
+        margin-bottom: 15px;
     }
 }
 
