@@ -5,18 +5,40 @@ document.getElementById("btn-menu-open").onclick = function (e) {
     document.getElementById("mobile-menu").classList.toggle("active")
 }
 
-document.getElementById("sub_menu_link-1").onclick = function (e) {
+document.getElementById("sub_menu_link-1").onclick = function (e){
     e.preventDefault();
-    document.getElementById("sub_menu_link-ul-1").classList.toggle("active")
-    document.getElementById("sub_menu_link-ul-2").classList.toggle("active")
+}
+
+document.getElementById("sub_menu_link-1").parentNode.onmouseover = function (e) {
+    e.preventDefault();
+    document.getElementById("sub_menu_link-ul-1").classList.add("active")
+    document.getElementById("sub_menu_link-ul-2").classList.add("active")
+    document.getElementById("sub_menu_link-ul-3").classList.remove("active")
+}
+
+document.getElementById("sub_menu_link-1").parentNode.onmouseout = function (e) {
+    e.preventDefault();
+    document.getElementById("sub_menu_link-ul-1").classList.remove("active")
+    document.getElementById("sub_menu_link-ul-2").classList.remove("active")
     document.getElementById("sub_menu_link-ul-3").classList.remove("active")
 }
 
 document.getElementById("sub_menu_link-2").onclick = function (e) {
     e.preventDefault();
+}
+
+document.getElementById("sub_menu_link-2").parentNode.onmouseover = function (e) {
+    e.preventDefault();
     document.getElementById("sub_menu_link-ul-1").classList.remove("active");
     document.getElementById("sub_menu_link-ul-2").classList.remove("active");
     document.getElementById("sub_menu_link-ul-3").classList.toggle("active");
+}
+
+document.getElementById("sub_menu_link-2").parentNode.onmouseout = function (e) {
+    e.preventDefault();
+    document.getElementById("sub_menu_link-ul-1").classList.remove("active");
+    document.getElementById("sub_menu_link-ul-2").classList.remove("active");
+    document.getElementById("sub_menu_link-ul-3").classList.remove("active");
 }
 
 document.getElementById("m-sub_menu_link-1").onclick = function (e) {

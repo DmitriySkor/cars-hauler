@@ -267,6 +267,22 @@
         padding: 10px 15px !important;
         min-height: auto;
     }
+
+    .menu__text > ul > li {
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .mobile-menu-list .menu__text ul li a {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 @media (min-width: 0) and (max-width: 767px) {
