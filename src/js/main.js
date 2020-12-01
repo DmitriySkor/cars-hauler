@@ -138,7 +138,7 @@ $(document).ready(function () {
     });
 
     let itemWidth = document.querySelector(".carousel-types-of-delivery").getElementsByClassName('owl-item');
-    console.log(itemWidth);
+    //console.log(itemWidth);
 
 
     // let s1 = document.getElementById("multiform").getElementsByClassName('step')[0];
