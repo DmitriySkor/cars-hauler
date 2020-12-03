@@ -16,11 +16,23 @@
     .grey__block_imag {
         max-width: 50%;
     }
+
+    .menu__text ul li {
+        margin-right: 25px;
+    }
+
+    .menu__text > ul > li:first-child {
+        display: none;
+    }
 }
 
 @media (min-width: 0) and (max-width: 1199px) {
     .menu__text ul li {
-        margin-right: 15px;
+        margin-right: 12px;
+    }
+
+    .menu__text ul li a {
+        font-size: 16px;
     }
 
     .multiform {
@@ -282,6 +294,10 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+    }
+
+    .menu__text ul li a {
+        font-size: 18px;
     }
 }
 
@@ -809,7 +825,7 @@
         margin: 0 auto;
     }
 
-    .copy__right_link ul li{
+    .copy__right_link ul li {
         margin-bottom: 15px;
     }
 }
