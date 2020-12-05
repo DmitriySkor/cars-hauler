@@ -169,8 +169,7 @@ a.head__button {
     justify-content: center;
     align-items: center;
     height: 60px;
-    width: 100%;
-    max-width: 275px;
+    width: 275px;
     min-width: 155px;
 
     background: #FFFFFF;
@@ -2034,7 +2033,7 @@ input.sidebar-control:-ms-input-placeholder {
     justify-content: center;
 }
 
-.sidebar__menu_link ul li:last-child{
+.sidebar__menu_link ul li:last-child {
     margin-bottom: 0;
 }
 
@@ -2050,8 +2049,8 @@ input.sidebar-control:-ms-input-placeholder {
 }
 
 /*other*/
-.contain-other{
-    padding: var(--main-padding) 0 ;
+.contain-other {
+    padding: var(--main-padding) 0;
     background-image: url(../img/bg-5.svg);
     background-repeat: no-repeat;
     background-position: center 56px;
@@ -2072,7 +2071,7 @@ input.sidebar-control:-ms-input-placeholder {
     color: #3C3B6E;
 }
 
-.other__info_text{
+.other__info_text {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2103,4 +2102,168 @@ input.sidebar-control:-ms-input-placeholder {
     border: 2px solid #EEB300;
     box-shadow: 0px 25px 25px -15px rgba(0, 0, 0, 0.2);
     transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/*Modal*/
+.modal-open {
+    padding-right: 0 !important;
+}
+
+.modal-dialog {
+    max-width: 840px;
+    margin: 1.75rem auto;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-body {
+    height: auto;
+    min-height: 560px;
+    padding: 68px 60px;
+}
+
+button.close {
+    background-color: #F9F9FE;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    opacity: 1;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal__info_head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal__info_head h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 130%;
+    color: #3C3B6E;
+
+    width: 100%;
+    max-width: 190px;
+    margin-right: 74px;
+}
+
+.modal__info_head p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: #3C3B6E;
+    max-width: 368px;
+    margin-bottom: 0;
+}
+
+.modal__info_form {
+    margin-top: 50px;
+}
+
+
+.modal__info_form form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-row-line {
+    width: calc(50% - 7px);
+    margin-right: 7px;
+}
+
+#in_name_2 {
+    background: url(../img/ico-user.svg) 26px 19px no-repeat #F9F9FE;
+    border: 1px solid #f9f9fe;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#in_name_2:hover,
+#in_name_2:focus {
+    border: 1px solid rgba(60, 59, 110, 0.2);
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.05);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#in_phone_2 {
+    background: url(../img/ico-phone.svg) 26px 19px no-repeat #F9F9FE;
+    border: 1px solid #f9f9fe;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#in_phone_2:hover,
+#in_phone_2:focus {
+    border: 1px solid rgba(60, 59, 110, 0.2);
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.05);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#in_mail_2 {
+    background: url(../img/ico-mail.svg) 26px 19px no-repeat #F9F9FE;
+    border: 1px solid #f9f9fe;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#in_mail_2:hover,
+#in_mail_2:focus {
+    border: 1px solid rgba(60, 59, 110, 0.2);
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.05);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#in_textarea_2 {
+    background: url(../img/ico-message.svg) 26px 19px no-repeat #f9f9fe;
+    border: 1px solid #f9f9fe;
+    transition: .5s cubic-bezier(.25, .1, .25, 1);
+    height: 185px;
+}
+
+#in_textarea_2:hover,
+#in_textarea_2:focus {
+    border: 1px solid rgba(60, 59, 110, 0.2);
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.05);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.form-row-buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-row-buttons .buttons-form {
+    margin-top: 0;
+}
+
+a.row__buttons {
+    margin-left: 57px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row__buttons_head {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    color: #3C3B6E;
+}
+
+.row__buttons_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3C3B6E;
 }

@@ -24,6 +24,15 @@
     .menu__text > ul > li:first-child {
         display: none;
     }
+
+    .sticky__menu_logo {
+        margin-right: 20px;
+    }
+
+    .sticky__menu .menu__text ul li {
+        margin-right: 10px;
+    }
+
 }
 
 @media (min-width: 0) and (max-width: 1199px) {
@@ -93,6 +102,10 @@
     .paper__info {
         width: 50%;
     }
+
+    #sticky-menu {
+        display: none;
+    }
 }
 
 @media (min-width: 0) and (max-width: 991px) {
@@ -153,6 +166,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+        box-shadow: 0px 25px 45px -25px rgba(0, 0, 0, 0.25);
     }
 
     .tabs__content_info {
@@ -298,6 +312,14 @@
 
     .menu__text ul li a {
         font-size: 18px;
+    }
+
+    .menu__text ul li .sub_menu_link-ul li:first-child {
+        display: none;
+    }
+
+    #modal {
+        padding-right: 0 !important;
     }
 }
 
@@ -469,6 +491,7 @@
         display: flex;
         align-items: flex-end;
         color: #191C2F;
+        margin-top: 15px;
     }
 
     .our__works_name h4 {
@@ -828,6 +851,59 @@
     .copy__right_link ul li {
         margin-bottom: 15px;
     }
+
+    .step__link_info a .step__link_info-icon {
+        background: #3c3b6e;
+        transition: .5s cubic-bezier(.25,.1,.25,1);
+    }
+
+    .step__link_info-icon svg path {
+        stroke: #FFFFFF;
+        transition: .5s cubic-bezier(.25,.1,.25,1);
+    }
+
+    .step__link_info-text {
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .step__link_info:hover .step__link_info-text {
+        text-shadow: none;
+    }
+
+    .step__name_img {
+        margin-right: 0;
+    }
+
+    .modal__info_head {
+        flex-wrap: wrap;
+    }
+
+    .modal__info_head h2 {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .modal__info_head p {
+        max-width: 100%;
+        margin-top: 15px;
+    }
+
+    .form-row-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    a.row__buttons {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .form-row-buttons .buttons-form {
+        margin-top: 0;
+        min-width: 220px;
+    }
 }
 
 @media (min-width: 0) and (max-width: 575px) {
@@ -841,6 +917,17 @@
 
     .foot_bread_crumbs ul li:last-child {
         margin-left: 15px;
+    }
+
+    .form-row-line {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .modal-body {
+        height: auto;
+        min-height: 560px;
+        padding: 68px 20px;
     }
 }
 

@@ -138,13 +138,13 @@ a.sub_menu_link:hover svg path {
     padding: 30px 20px 49px 35px !important;
     min-height: 274px;
     opacity: 0;
-    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    /*transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);*/
 }
 
 .menu__text ul li .sub_menu_link-ul.active {
     z-index: 2;
     opacity: 1;
-    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    /*transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);*/
 }
 
 .menu__text ul li .sub_menu_link-ul li {
@@ -383,3 +383,90 @@ a.mobile-menu-open.active span:after {
     display: none;
 }
 
+/*sticky menu*/
+.sticky_contain {
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    background: #FFFFFF;
+    position: fixed;
+    left: 0;
+    top: -70px;
+    box-shadow: 0 25px 35px -15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    z-index: -1;
+}
+
+.sticky_contain.sticky-fixed {
+    top: 0;
+    z-index: 3;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.sticky_contain_menu {
+    position: relative;
+    width: 100%;
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.sticky__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sticky__menu_logo {
+    margin-right: 40px;
+}
+
+.sticky__menu .menu__text ul li {
+    list-style-type: none;
+    margin-right: 20px;
+    position: relative;
+}
+
+.sticky__menu .menu__text > ul > li {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+/*#sticky_menu_link-ul-1 {*/
+/*    position: absolute;*/
+/*    top: 70px;*/
+/*    left: -20px;*/
+/*    background: #3C3B6E;*/
+/*}*/
+
+/*#sticky_menu_link-ul-2 {*/
+/*    position: absolute;*/
+/*    top: 70px;*/
+/*    left: -20px;*/
+/*    background: #34345f;*/
+/*}*/
+
+/*#sticky_menu_link-ul-3 {*/
+/*    position: absolute;*/
+/*    top: 70px;*/
+/*    left: -20px;*/
+/*    background: #3C3B6E;*/
+/*}*/
+
+.sticky__menu .menu__text ul li .sub_menu_link-ul {
+    position: absolute;
+    top: 70px;
+    left: -20px;
+    background: #3C3B6E;
+    display: none;
+    opacity: 0;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.sticky__menu .menu__text ul li .sub_menu_link-ul.active {
+    display: flex;
+    opacity: 1;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}

@@ -42,13 +42,9 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M15.25 8.50342C15.25 8.00342 15.1875 7.62842 15.125 7.22217H7.75V9.87842H12.125C11.9688 11.0347 10.8125 13.2222 7.75 13.2222C5.09375 13.2222 2.9375 11.0347 2.9375 8.31592C2.9375 3.97217 8.0625 1.97217 10.8125 4.62842L12.9375 2.59717C11.5938 1.34717 9.8125 0.565918 7.75 0.565918C3.4375 0.565918 0 4.03467 0 8.31592C0 12.6284 3.4375 16.0659 7.75 16.0659C12.2188 16.0659 15.25 12.9409 15.25 8.50342Z"
-                                                    fill="white" />
+                                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M23.75 12C23.75 5.57812 18.5469 0.375 12.125 0.375C5.70312 0.375 0.5 5.57812 0.5 12C0.5 16.9688 3.54688 21.1406 7.85938 22.8281C7.76562 21.9375 7.67188 20.5312 7.90625 19.5C8.14062 18.6094 9.26562 13.7344 9.26562 13.7344C9.26562 13.7344 8.9375 13.0312 8.9375 12C8.9375 10.4062 9.875 9.1875 11.0469 9.1875C12.0312 9.1875 12.5 9.9375 12.5 10.8281C12.5 11.8125 11.8438 13.3125 11.5156 14.7188C11.2812 15.8438 12.125 16.7812 13.25 16.7812C15.3125 16.7812 16.9062 14.625 16.9062 11.4844C16.9062 8.67188 14.8906 6.75 12.0781 6.75C8.75 6.75 6.82812 9.23438 6.82812 11.7656C6.82812 12.7969 7.20312 13.875 7.67188 14.4375C7.76562 14.5312 7.76562 14.6719 7.76562 14.7656C7.67188 15.1406 7.4375 15.9375 7.4375 16.0781C7.39062 16.3125 7.25 16.3594 7.01562 16.2656C5.5625 15.5625 4.67188 13.4531 4.67188 11.7188C4.67188 8.0625 7.34375 4.6875 12.3594 4.6875C16.3906 4.6875 19.5312 7.59375 19.5312 11.4375C19.5312 15.4219 17 18.6562 13.4844 18.6562C12.3125 18.6562 11.1875 18.0469 10.8125 17.2969C10.8125 17.2969 10.25 19.5469 10.1094 20.0625C9.82812 21.0938 9.125 22.3594 8.65625 23.1094C9.73438 23.4844 10.9062 23.625 12.125 23.625C18.5469 23.625 23.75 18.4219 23.75 12Z" fill="#FFFFFF"/>
                                             </svg>
-
                                         </a>
                                     </li>
 
@@ -194,6 +190,64 @@
     </div>
 </footer>
 
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0108 1L1 20.0108" stroke="#3C3B6E" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M1 1L20.0108 20.0108" stroke="#3C3B6E" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="modal__info">
+                    <div class="modal__info_head">
+                        <h2>Contact Cars Hauler</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                    </div>
+                    <div class="modal__info_form">
+                        <form>
+                            <div class="form-row-line">
+                                <div class="form-group">
+                                    <label for="in_name_2" class="display-none"></label>
+                                    <input type="text" class="form-line" id="in_name_2" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="in_phone_2" class="display-none"></label>
+                                    <input type="text" class="form-line" id="in_phone_2" placeholder="Your Phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="in_mail_2" class="display-none"></label>
+                                    <input type="email" class="form-line" id="in_mail_2" placeholder="Your Mail">
+                                </div>
+                            </div>
+                            <div class="form-row-line">
+                                <div class="form-group">
+                                    <label for="in_textarea_2" class="display-none"></label>
+                                    <textarea class="form-area" id="in_textarea_2" rows="3" placeholder="Your Subject"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row-buttons">
+                                <button type="submit" class="buttons-form">Send Request</button>
+                                <a class="row__buttons" href="mailto:krookweb@gmail.com">
+                                    <span class="row__buttons_head">Email Us</span>
+                                    <span class="row__buttons_text">krookweb@gmail.com</span>
+                                </a>
+                                <a class="row__buttons" href="tel:+18886668929">
+                                    <span class="row__buttons_head">Call Us</span>
+                                    <span class="row__buttons_text">888 666 89 29</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Script JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -205,5 +259,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="js/script.js"></script>
 </body>
-
 </html>

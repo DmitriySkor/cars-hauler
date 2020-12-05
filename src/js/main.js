@@ -1,3 +1,18 @@
+$(".menu__text ul li ul li:last-child a").attr(
+    {
+        "class": "modal-on"
+    }
+);
+
+$(".modal-on").attr(
+    {
+        "data-toggle": "modal",
+        "data-target": "#modal"
+    }
+);
+
+console.log(document.querySelectorAll(".modal-on"));
+
 // Выпадающее меню
 document.getElementById("btn-menu-open").onclick = function (e) {
 
@@ -7,7 +22,7 @@ document.getElementById("btn-menu-open").onclick = function (e) {
     document.getElementById("mobile-menu").classList.toggle("active")
 }
 
-document.getElementById("sub_menu_link-1").onclick = function (e){
+document.getElementById("sub_menu_link-1").onclick = function (e) {
     e.preventDefault();
 }
 
@@ -99,6 +114,74 @@ document.getElementById("m-sub_menu_link-3").onclick = function (e) {
     document.getElementById("m-sub_menu_link-3").classList.toggle("active");
 }
 
+// sticky menu Появление при скролле
+$(window).scroll(function() {
+    let height = $(window).scrollTop();
+
+    /*Если сделали скролл на 150px задаём новый класс для header*/
+    if(height > 150){
+        $('#sticky-menu').addClass('sticky-fixed');
+    } else{
+        /*Если меньше 150px удаляем класс для header*/
+        $('#sticky-menu').removeClass('sticky-fixed');
+    }
+
+});
+
+
+
+// sticky menu Первый пункт
+document.getElementById("sticky_menu_link-1").parentNode.onmouseover = function (e) {
+    e.preventDefault();
+    document.getElementById("sticky_menu_link-ul-1").classList.add("active")
+    document.getElementById("sticky_menu_link-ul-2").classList.remove("active")
+    document.getElementById("sticky_menu_link-ul-3").classList.remove("active")
+}
+
+document.getElementById("sticky_menu_link-1").parentNode.onmouseout = function (e) {
+    e.preventDefault();
+    document.getElementById("sticky_menu_link-ul-1").classList.remove("active")
+    document.getElementById("sticky_menu_link-ul-2").classList.remove("active")
+    document.getElementById("sticky_menu_link-ul-3").classList.remove("active")
+}
+
+// sticky menu Второй пункт
+document.getElementById("sticky_menu_link-2").onclick = function (e) {
+    e.preventDefault();
+}
+
+document.getElementById("sticky_menu_link-2").parentNode.onmouseover = function (e) {
+    e.preventDefault();
+    document.getElementById("sticky_menu_link-ul-1").classList.remove("active");
+    document.getElementById("sticky_menu_link-ul-2").classList.add("active");
+    document.getElementById("sticky_menu_link-ul-3").classList.remove("active");
+}
+
+document.getElementById("sticky_menu_link-2").parentNode.onmouseout = function (e) {
+    e.preventDefault();
+    document.getElementById("sticky_menu_link-ul-1").classList.remove("active");
+    document.getElementById("sticky_menu_link-ul-2").classList.remove("active");
+    document.getElementById("sticky_menu_link-ul-3").classList.remove("active");
+}
+
+// sticky menu Третий пункт
+document.getElementById("sticky_menu_link-3").onclick = function (e) {
+    e.preventDefault();
+}
+
+document.getElementById("sticky_menu_link-3").parentNode.onmouseover = function (e) {
+    e.preventDefault();
+    document.getElementById("sticky_menu_link-ul-1").classList.remove("active");
+    document.getElementById("sticky_menu_link-ul-2").classList.remove("active");
+    document.getElementById("sticky_menu_link-ul-3").classList.add("active");
+}
+
+document.getElementById("sticky_menu_link-3").parentNode.onmouseout = function (e) {
+    e.preventDefault();
+    document.getElementById("sticky_menu_link-ul-1").classList.remove("active");
+    document.getElementById("sticky_menu_link-ul-2").classList.remove("active");
+    document.getElementById("sticky_menu_link-ul-3").classList.remove("active");
+}
 
 $(document).ready(function () {
     // Multi-step form
