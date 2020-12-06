@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
     <link rel="stylesheet" href="css/style.css">
@@ -397,13 +395,13 @@
                                 <div class="form-row">
                                     <div class="col-multiform">
                                         <label class="multiform-label" for="multiform_from">Delivery from</label>
-                                        <input type="text" class="multiform-input" id="multiform_from" placeholder="Enter Zip Code or City">
+                                        <input type="text" class="multiform-input" id="multiform_from" minlength="5" maxlength="5" placeholder="Enter Zip Code or City">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-multiform">
                                         <label class="multiform-label" for="multiform_to">Delivery to</label>
-                                        <input type="text" class="multiform-input" id="multiform_to" placeholder="Enter Zip Code or City">
+                                        <input type="text" class="multiform-input" id="multiform_to" minlength="5" maxlength="5" placeholder="Enter Zip Code or City">
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -415,79 +413,64 @@
                                 <div class="checkbox">
                                     <input class="custom-checkbox" type="checkbox" id="delivery-1">
                                     <label class="multiform-label-check" for="delivery-1">Enclosed Truck Delivery</label>
+                                    <div class="tooltip-info">
+                                        <img src="img/tooltip-img.svg" alt="img">
+                                        <div class="tooltip-info-text">
+                                            Lorem ipsum dolor sit amet.
+                                        </div>
+                                    </div>
                                 </div>
-                                <a href="#" class="multiform-btn next">go to Vehicle Details</a>
+                                <a href="#" id="multiform-btn-one" class="multiform-btn disabled">go to Vehicle Details</a>
                             </div>
                 
                             <div class="step">
                                 <div class="progress__line_one"></div>
                                 <div class="step_number">
-                                    <a href="#" class="l1-1 back step_number_txt active">1</a>
-                                    <a href="#" class="l1-2 step_number_txt">2</a>
+                                    <a href="#" id="step_2_return_1" class="l1-1 step_number_txt">1</a>
+                                    <a href="#" class="l1-2 step_number_txt disabled">2</a>
                                     <a href="#" class="l1-3 step_number_txt disabled">3</a>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-multiform">
-                                        <label class="multiform-label" for="vehicle_year">Vehicle Year</label>
-                                        <select class="multiform-select" id="vehicle_year">
-                                            <option disabled selected>Select</option>
-                                            <option>2020</option>
-                                            <option>2019</option>
-                                            <option>2018</option>
-                                            <option>2017</option>
-                                            <option>2016</option>
-                                            <option>2015</option>
-                                            <option>2014</option>
-                                            <option>2013</option>
-                                            <option>2012</option>
-                                            <option>2011</option>
-                                            <option>2010</option>
-                                        </select>
+                                        <label class="multiform-label" for="car-years">Vehicle Year</label>
+                                        <select class="multiform-select" name="car-years" id="car-years"></select>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-multiform">
-                                        <label class="multiform-label" for="vehicle_mark">Vehicle Mark</label>
-                                        <select class="multiform-select" id="vehicle_mark">
-                                            <option disabled selected>Select</option>
-                                            <option>Acura</option>
-                                            <option>Alfa Romeo</option>
-                                            <option>Aston Martin</option>
-                                            <option>Audi</option>
-                                            <option>Bentley</option>
-                                            <option>BMW</option>
-                                            <option>Bugatti</option>
-                                            <option>Buick</option>
-                                        </select>
+                                        <label class="multiform-label" for="car-makes">Vehicle Mark</label>
+                                        <select class="multiform-select" name="car-makes" id="car-makes"></select>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col-multiform">
-                                        <label class="multiform-label" for="vehicle_model">Vehicle Model</label>
-                                        <select class="multiform-select" id="vehicle_model">
-                                            <option disabled selected>Select</option>
-                                            <option>Cadenza</option>
-                                            <option>Carens</option>
-                                            <option>Carnival</option>
-                                            <option>Ceed</option>
-                                            <option>Cerato</option>
-                                            <option>K2 Cross</option>
-                                            <option>K9</option>
-                                            <option>K900</option>
-                                        </select>
+                                        <label class="multiform-label" for="car-models">Vehicle Model</label>
+                                        <select class="multiform-select" name="car-models" id="car-models"></select>
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row" style="justify-content: center">
                                     <div class="checkbox">
                                         <input class="custom-checkbox" type="checkbox" id="delivery-2">
                                         <label class="multiform-label-check" for="delivery-2">Operable</label>
+                                        <div class="tooltip-info">
+                                            <img src="img/tooltip-img.svg" alt="img">
+                                            <div class="tooltip-info-text">
+                                                Lorem ipsum dolor sit amet.
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="checkbox">
                                         <input class="custom-checkbox" type="checkbox" id="delivery-3">
                                         <label class="multiform-label-check" for="delivery-3">Top Load</label>
+                                        <div class="tooltip-info">
+                                            <img src="img/tooltip-img.svg" alt="img">
+                                            <div class="tooltip-info-text">
+                                                Lorem ipsum dolor sit amet.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <a href="#" class="multiform-btn next">Contact Details</a>
+                                <a href="#" id="multiform-btn-two" class="multiform-btn disabled">Contact Details</a>
                             </div>
                 
                             <div class="step">
@@ -509,14 +492,18 @@
                                         <input type="text" class="multiform-input" id="multiform_mail_2" placeholder="Your Mail">
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="delivery-4">
-                                        <label class="multiform-label-check-green" for="delivery-4">Door-to-Door Service</label>
+                                <div class="form-row" style="justify-content: center">
+                                    <div class="checked__checkbox">
+                                        <div class="checked__checkbox_img">
+                                            <img src="img/checked-checkbox-img.svg" alt="img">
+                                        </div>
+                                        <div class="checked__checkbox_txt">Door-to-Door Service</div>
                                     </div>
-                                    <div class="checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="delivery-5">
-                                        <label class="multiform-label-check-green" for="delivery-5">No Hidden Fees</label>
+                                    <div class="checked__checkbox">
+                                        <div class="checked__checkbox_img">
+                                            <img src="img/checked-checkbox-img.svg" alt="img">
+                                        </div>
+                                        <div class="checked__checkbox_txt">No Hidden Fees</div>
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -546,7 +533,7 @@
                                         <input type="text" class="multiform-input" id="multiform_mail_4" placeholder="Your Mail">
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row" style="justify-content: center">
                                     <div class="checkbox">
                                         <input class="custom-checkbox" type="checkbox" id="delivery-6">
                                         <label class="multiform-label-check" for="delivery-6">Call Me Before Transportation</label>
@@ -557,7 +544,7 @@
                                         By providing your information, you agree to our <a href="#">privacy policy</a> and SMS notifications Up to 8msgs/mo. Msg&date rates may apply. Text Stop to unsibscribe
                                     </div>
                                 </div>
-                                <input type="submit" class="multiform-btn green next" value="Calculate Shipping">
+                                <input type="submit" class="multiform-btn green" value="Calculate Shipping">
                             </div>
                         </form>
                     </div>
@@ -1936,8 +1923,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://www.carqueryapi.com/js/carquery.0.3.4.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -2,6 +2,10 @@ form div.step {
     display: none;
 }
 
+.step.active {
+    display: block;
+}
+
 a.back {
     display: none;
 }
@@ -30,6 +34,12 @@ form input[type=submit] {
 .multiform .step {
     margin: 0;
     position: relative;
+    min-height: 440px;
+}
+
+a.multiform-btn.disabled {
+    cursor: no-drop;
+    pointer-events: none;
 }
 
 .step__head {
@@ -102,7 +112,7 @@ form input[type=submit] {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px auto;
+    padding: 10px 5px;
 }
 
 /* для элемента input c type="checkbox" */
@@ -169,21 +179,28 @@ a.multiform-btn {
     border: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background: radial-gradient(73.27% 514.54% at 24.53% 34.17%, #23234a 0, #3c3b6e 100%);
+    background: radial-gradient(73.27% 514.54% at 24.53% 34.17%,#23234a 0,#3c3b6e 100%);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: #fff;
     text-transform: uppercase;
-    position: relative;
-    transition: .5s cubic-bezier(.25, .1, .25, 1);
+    transition: .5s cubic-bezier(.25,.1,.25,1);
     margin-left: 8px;
+    position: absolute;
+    bottom: 0;
 }
 
 
 .multiform-btn:hover {
     background: radial-gradient(100% 940.44% at 0% 0%, #B22234 0%, #DA2C42 100%);
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.multiform-btn.disabled:hover {
+    /*cursor: no-drop;*/
+    background: radial-gradient(73.27% 514.54% at 24.53% 34.17%,#23234a 0,#3c3b6e 100%);
     transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
@@ -378,3 +395,4 @@ input.multiform-btn:hover {
     background: radial-gradient(100% 940.44% at 0% 0%, #B22234 0%, #DA2C42 100%);
     transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
+
