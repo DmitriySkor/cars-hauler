@@ -176,6 +176,12 @@ gulp.task('favicon', function () {
         .pipe(gulp.dest('build'))
 })
 
+// Таск для Копирования mail.php
+gulp.task('mail', function () {
+    return gulp.src('src/mail.php')
+        .pipe(gulp.dest('build'))
+})
+
 // Таск для копирование файлов в build
 gulp.task('copyFiles', function () {
     return gulp.src(src.copy_files)
@@ -192,7 +198,7 @@ gulp.task('copyFiles', function () {
 gulp.task('watch', watch);
 
 // Таск для удаления файлов в папке build и запуск styles и scripts
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts, "img", "favicon", "copyFiles")));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts, "img", "mail", "favicon", "copyFiles")));
 
 // Таск запускает таск build и watch последовательно
 gulp.task('dev', gulp.series('build', 'watch'));

@@ -6,14 +6,6 @@ form div.step {
     display: block;
 }
 
-a.back {
-    display: none;
-}
-
-form input[type=submit] {
-    display: none;
-}
-
 .multiform-contain {
     width: 100%;
     height: 100%;
@@ -29,6 +21,7 @@ form input[type=submit] {
     min-width: 360px;
     height: auto;
     min-height: 450px;
+    border-radius: 4px;
 }
 
 .multiform .step {
@@ -84,20 +77,21 @@ a.multiform-btn.disabled {
 }
 
 .multiform-input {
+    font-weight: bold;
     width: 100%;
     margin: 0;
     padding: 0;
     border: none;
     cursor: pointer;
-    opacity: 0.5;
-    transition: .5s cubic-bezier(.25,.1,.25,1);
+    /*opacity: 0.5;*/
+    transition: .5s cubic-bezier(.25, .1, .25, 1);
 }
 
-.multiform-input:focus,
-.multiform-input:hover{
-    opacity: 1;
-    transition: .5s cubic-bezier(.25,.1,.25,1);
-}
+/*.multiform-input:focus,*/
+/*.multiform-input:hover {*/
+/*    opacity: 1;*/
+/*    transition: .5s cubic-bezier(.25, .1, .25, 1);*/
+/*}*/
 
 .ui-widget.ui-widget-content {
     width: 100%;
@@ -179,14 +173,14 @@ a.multiform-btn {
     border: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background: radial-gradient(73.27% 514.54% at 24.53% 34.17%,#23234a 0,#3c3b6e 100%);
+    background: radial-gradient(73.27% 514.54% at 24.53% 34.17%, #23234a 0, #3c3b6e 100%);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: #fff;
     text-transform: uppercase;
-    transition: .5s cubic-bezier(.25,.1,.25,1);
+    transition: .5s cubic-bezier(.25, .1, .25, 1);
     margin-left: 8px;
     position: absolute;
     bottom: 0;
@@ -200,7 +194,7 @@ a.multiform-btn {
 
 .multiform-btn.disabled:hover {
     /*cursor: no-drop;*/
-    background: radial-gradient(73.27% 514.54% at 24.53% 34.17%,#23234a 0,#3c3b6e 100%);
+    background: radial-gradient(73.27% 514.54% at 24.53% 34.17%, #23234a 0, #3c3b6e 100%);
     transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
@@ -214,7 +208,7 @@ a.multiform-btn:before {
 
 .progress__line_one {
     position: absolute;
-    top: -3px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 3px;
@@ -228,11 +222,14 @@ a.multiform-btn:before {
     background: -ms-linear-gradient(left, #6fcf97 0%, #6fcf97 33%, #3c3b6e 33%, #3c3b6e 100%);
     background: linear-gradient(to right, #6fcf97 0%, #6fcf97 33%, #3c3b6e 33%, #3c3b6e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6fcf97', endColorstr='#3c3b6e', GradientType=1);
+
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 .progress__line_two {
     position: absolute;
-    top: -3px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 3px;
@@ -246,11 +243,14 @@ a.multiform-btn:before {
     background: -ms-linear-gradient(left, rgba(111, 207, 151, 1) 0%, rgba(111, 207, 151, 1) 66%, rgba(60, 59, 110, 1) 66%, rgba(60, 59, 110, 1) 100%);
     background: linear-gradient(to right, rgba(111, 207, 151, 1) 0%, rgba(111, 207, 151, 1) 66%, rgba(60, 59, 110, 1) 66%, rgba(60, 59, 110, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6fcf97', endColorstr='#3c3b6e', GradientType=1);
+
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 .progress__line_tri {
     position: absolute;
-    top: -3px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 3px;
@@ -264,10 +264,13 @@ a.multiform-btn:before {
     background: -ms-linear-gradient(left, rgba(111, 207, 151, 1) 0%, rgba(111, 207, 151, 1) 100%, rgba(60, 59, 110, 1) 100%, rgba(60, 59, 110, 1) 100%);
     background: linear-gradient(to right, rgba(111, 207, 151, 1) 0%, rgba(111, 207, 151, 1) 100%, rgba(60, 59, 110, 1) 100%, rgba(60, 59, 110, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6fcf97', endColorstr='#3c3b6e', GradientType=1);
+
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 .step_number {
-    padding: 30px;
+    padding: 30px 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -286,7 +289,7 @@ a.step_number_txt {
     border-radius: 50px;
     background: #FFFFFF;
 
-    border: 2px solid #FFFFFF;
+    border: 2px solid #3C3B6E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,7 +313,9 @@ a.step_number_txt.disabled {
     font-size: 16px;
     line-height: 150%;
     color: #3C3B6E;
+    border: 2px solid #FFFFFF;
     opacity: 0.5;
+    cursor: inherit;
 }
 
 .multiform-select {
@@ -346,7 +351,7 @@ a.step_number_txt.disabled {
     margin: 10px 11px 15px;
 }
 
-.multiform-label-text a{
+.multiform-label-text a {
     font-style: normal;
     font-weight: bold;
     font-size: 10px;
@@ -356,7 +361,7 @@ a.step_number_txt.disabled {
     color: #3C3B6E;
 }
 
-.multiform-label-check-green{
+.multiform-label-check-green {
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -374,7 +379,7 @@ input.multiform-btn {
     border: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background: radial-gradient(73.27% 514.54% at 24.53% 34.17%,#23234a 0,#3c3b6e 100%);
+    background: radial-gradient(73.27% 514.54% at 24.53% 34.17%, #23234a 0, #3c3b6e 100%);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -382,7 +387,7 @@ input.multiform-btn {
     color: #fff;
     text-transform: uppercase;
     position: relative;
-    transition: .5s cubic-bezier(.25,.1,.25,1);
+    transition: .5s cubic-bezier(.25, .1, .25, 1);
     margin-left: 8px;
 }
 
@@ -396,3 +401,135 @@ input.multiform-btn:hover {
     transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
+input.multiform-btn.disabled {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.multiform-btn:before{
+    content: url("../img/bg-deliver-btn.svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.multiform-btn.green {
+    background: #6FCF97;
+}
+
+.multiform-btn.green:hover {
+    background: #6FCF97;
+}
+
+
+input.multiform-input::-webkit-input-placeholder {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3C3B6E;
+    opacity: 0.5;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+input.multiform-input::-moz-placeholder {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3C3B6E;
+    opacity: 0.5;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Firefox 19+ */
+input.multiform-input:-moz-placeholder {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3C3B6E;
+    opacity: 0.5;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Firefox 18- */
+input.multiform-input:-ms-input-placeholder {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3C3B6E;
+    opacity: 0.5;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+input.multiform-input:hover::-webkit-input-placeholder,
+input.multiform-input:hover::-moz-placeholder,
+input.multiform-input:hover:-moz-placeholder,
+input.multiform-input:hover:-ms-input-placeholder{
+    opacity: 1;
+    transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+:-moz-ui-invalid {
+    box-shadow: none;
+}
+
+.l1-1.step_number_txt:before {
+    position: absolute;
+    content: '';
+    top: 22px;
+    right: -62px;
+    width: 54px;
+    height: 1px;
+    border: 1px dashed #3c3b6e;
+}
+
+.l1-1.step_number_txt.active:before {
+    position: absolute;
+    content: '';
+    top: 22px;
+    right: -62px;
+    width: 54px;
+    height: 1px;
+    border: 1px dashed #6FCF97;
+}
+
+.l1-2.step_number_txt:before{
+    position: absolute;
+    content: '';
+    top: 22px;
+    right: -62px;
+    width: 54px;
+    height: 1px;
+    border: 1px dashed #C5C5D4;
+}
+
+.l2-1.back.step_number_txt.active:before{
+    position: absolute;
+    content: '';
+    top: 22px;
+    right: -62px;
+    width: 54px;
+    height: 1px;
+    border: 1px dashed #6FCF97;
+}
+
+.l2-2.back.step_number_txt:before{
+    position: absolute;
+    content: '';
+    top: 22px;
+    right: -62px;
+    width: 54px;
+    height: 1px;
+    border: 1px dashed #3c3b6e;
+}
+
+.l2-2.back.step_number_txt.active:before{
+    position: absolute;
+    content: '';
+    top: 22px;
+    right: -62px;
+    width: 54px;
+    height: 1px;
+    border: 1px dashed #6FCF97;
+}

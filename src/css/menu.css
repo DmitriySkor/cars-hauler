@@ -392,11 +392,18 @@ a.mobile-menu-open.active span:after {
     position: fixed;
     left: 0;
     top: -70px;
-    box-shadow: 0 25px 35px -15px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     display: flex;
     align-items: center;
     transition: 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
     z-index: -1;
+}
+
+.sticky_contain.sticky-fixed {
+    top: 0;
+    z-index: 3;
+    box-shadow: 0 25px 35px -15px rgba(0, 0, 0, 0.1);
+    transition: .5s cubic-bezier(.25,.1,.25,1);
 }
 
 .sticky_contain.sticky-fixed {

@@ -1,6 +1,11 @@
 <div class="multiform-contain">
     <div class="multiform">
-        <form id="multiform" action="#">
+        <form id="multiform" action="mail.php">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Cars Hauler">
+            <input type="hidden" name="admin_email" value="v.gorbatenko84@gmail.com">
+            <input type="hidden" name="form_subject" value="Form Subject">
+            <!-- END Hidden Required Fields -->
             <div class="step">
                 <div class="step__head">
                     Get Your Quote<br>
@@ -9,23 +14,23 @@
                 <div class="form-row">
                     <div class="col-multiform">
                         <label class="multiform-label" for="multiform_from">Delivery from</label>
-                        <input type="text" class="multiform-input" id="multiform_from" minlength="5" maxlength="5" placeholder="Enter Zip Code or City">
+                        <input type="text" name="Delivery from" class="multiform-input" id="multiform_from" minlength="5" maxlength="5" placeholder="Enter Zip Code or City">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-multiform">
                         <label class="multiform-label" for="multiform_to">Delivery to</label>
-                        <input type="text" class="multiform-input" id="multiform_to" minlength="5" maxlength="5" placeholder="Enter Zip Code or City">
+                        <input type="text" name="Delivery to" class="multiform-input" id="multiform_to" minlength="5" maxlength="5" placeholder="Enter Zip Code or City">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-multiform">
                         <label class="multiform-label" for="datepicker">First Available Date</label>
-                        <input type="text" class="multiform-input" id="datepicker" placeholder="Enter Delivery Date">
+                        <input type="text" name="Available Date" class="multiform-input" id="datepicker" placeholder="Enter Delivery Date">
                     </div>
                 </div>
                 <div class="checkbox">
-                    <input class="custom-checkbox" type="checkbox" id="delivery-1">
+                    <input type="checkbox" name="Enclosed Truck Delivery" id="delivery-1" class="custom-checkbox">
                     <label class="multiform-label-check" for="delivery-1">Enclosed Truck Delivery</label>
                     <div class="tooltip-info">
                         <img src="img/tooltip-img.svg" alt="img">
@@ -40,31 +45,31 @@
             <div class="step">
                 <div class="progress__line_one"></div>
                 <div class="step_number">
-                    <a href="#" id="step_2_return_1" class="l1-1 step_number_txt">1</a>
+                    <a href="#" id="step_2_return_1" class="l1-1 step_number_txt active">1</a>
                     <a href="#" class="l1-2 step_number_txt disabled">2</a>
                     <a href="#" class="l1-3 step_number_txt disabled">3</a>
                 </div>
                 <div class="form-row">
                     <div class="col-multiform">
                         <label class="multiform-label" for="car-years">Vehicle Year</label>
-                        <select class="multiform-select" name="car-years" id="car-years"></select>
+                        <select name="Vehicle Year" id="car-years" class="multiform-select"></select>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-multiform">
                         <label class="multiform-label" for="car-makes">Vehicle Mark</label>
-                        <select class="multiform-select" name="car-makes" id="car-makes"></select>
+                        <select name="Vehicle Mark" id="car-makes" class="multiform-select"></select>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-multiform">
                         <label class="multiform-label" for="car-models">Vehicle Model</label>
-                        <select class="multiform-select" name="car-models" id="car-models"></select>
+                        <select name="Vehicle Model" id="car-models" class="multiform-select"></select>
                     </div>
                 </div>
                 <div class="form-row" style="justify-content: center">
                     <div class="checkbox">
-                        <input class="custom-checkbox" type="checkbox" id="delivery-2">
+                        <input type="checkbox" name="Operable" id="delivery-2" class="custom-checkbox">
                         <label class="multiform-label-check" for="delivery-2">Operable</label>
                         <div class="tooltip-info">
                             <img src="img/tooltip-img.svg" alt="img">
@@ -74,7 +79,7 @@
                         </div>
                     </div>
                     <div class="checkbox">
-                        <input class="custom-checkbox" type="checkbox" id="delivery-3">
+                        <input type="checkbox" name="Top Load" id="delivery-3" class="custom-checkbox">
                         <label class="multiform-label-check" for="delivery-3">Top Load</label>
                         <div class="tooltip-info">
                             <img src="img/tooltip-img.svg" alt="img">
@@ -90,20 +95,20 @@
             <div class="step">
                 <div class="progress__line_two"></div>
                 <div class="step_number">
-                    <a href="#" class="l2-1 back step_number_txt active">1</a>
-                    <a href="#" class="l2-2 back step_number_txt active">2</a>
+                    <a href="#" id="step_3_return_1" class="l2-1 back step_number_txt active">1</a>
+                    <a href="#" id="step_3_return_2" class="l2-2 back step_number_txt">2</a>
                     <a href="#" class="l2-3 step_number_txt disabled">3</a>
                 </div>
                 <div class="form-row">
                     <div class="col-multiform">
                         <label class="multiform-label" for="multiform_mail_1">Quote Send To</label>
-                        <input type="text" class="multiform-input" id="multiform_mail_1" placeholder="Your Mail">
+                        <input type="email" name="Quote Send To" class="multiform-input" id="multiform_mail_1" placeholder="Your Name">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-multiform">
                         <label class="multiform-label" for="multiform_mail_2">Quote Send To</label>
-                        <input type="text" class="multiform-input" id="multiform_mail_2" placeholder="Your Mail">
+                        <input type="email" name="Quote Send To" class="multiform-input" id="multiform_mail_2" placeholder="Your Mail">
                     </div>
                 </div>
                 <div class="form-row" style="justify-content: center">
@@ -125,31 +130,31 @@
                         By providing your information, you agree to our <a href="#">privacy policy</a> and SMS notifications Up to 8msgs/mo. Msg&date rates may apply. Text Stop to unsibscribe
                     </div>
                 </div>
-                <a href="#" class="multiform-btn next">Calculate Shipping</a>
+                <a href="#" id="multiform-btn-tri" class="multiform-btn disabled">Calculate Shipping</a>
             </div>
 
             <div class="step">
                 <div class="progress__line_tri"></div>
                 <div class="step_number">
-                    <a href="#" class="l3-1 back step_number_txt active">1</a>
-                    <a href="#" class="l3-2 back step_number_txt active">2</a>
-                    <a href="#" class="l3-3 back step_number_txt active">3</a>
+                    <a href="#" id="step_4_return_1" class="l3-1 back step_number_txt active">1</a>
+                    <a href="#" id="step_4_return_2" class="l3-2 back step_number_txt active">2</a>
+                    <a href="#" id="step_4_return_3" class="l3-3 back step_number_txt">3</a>
                 </div>
                 <div class="form-row">
                     <div class="col-multiform">
                         <label class="multiform-label" for="multiform_mail_3">Quote Send To</label>
-                        <input type="text" class="multiform-input" id="multiform_mail_3" placeholder="Your Mail">
+                        <input type="email" name="Quote Send To" class="multiform-input" id="multiform_mail_3" placeholder="Your Name">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-multiform">
                         <label class="multiform-label" for="multiform_mail_4">Quote Send To</label>
-                        <input type="text" class="multiform-input" id="multiform_mail_4" placeholder="Your Mail">
+                        <input type="email" name="Quote Send To" class="multiform-input" id="multiform_mail_4" placeholder="Your Mail">
                     </div>
                 </div>
                 <div class="form-row" style="justify-content: center">
                     <div class="checkbox">
-                        <input class="custom-checkbox" type="checkbox" id="delivery-6">
+                        <input name="Call Me Before Transportation" class="custom-checkbox" type="checkbox" id="delivery-6">
                         <label class="multiform-label-check" for="delivery-6">Call Me Before Transportation</label>
                     </div>
                 </div>
@@ -158,7 +163,7 @@
                         By providing your information, you agree to our <a href="#">privacy policy</a> and SMS notifications Up to 8msgs/mo. Msg&date rates may apply. Text Stop to unsibscribe
                     </div>
                 </div>
-                <input type="submit" class="multiform-btn green" value="Calculate Shipping">
+                <input id="multiform-btn-four" type="submit" class="multiform-btn disabled" value="Calculate Shipping">
             </div>
         </form>
     </div>

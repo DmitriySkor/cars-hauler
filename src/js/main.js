@@ -38,8 +38,7 @@ function validate_one_step() {
     }
 
 
-
-    multiformBtnOne.onclick = function (){
+    multiformBtnOne.onclick = function () {
         child[0].classList.remove("active");
         child[1].classList.add("active");
     }
@@ -49,43 +48,150 @@ function validate_one_step() {
 
 validate_one_step();
 
-document.getElementById("step_2_return_1").onclick = function (){
+document.getElementById("step_2_return_1").onclick = function () {
     child[0].classList.add("active");
     child[1].classList.remove("active");
 }
 
-function validate_two_step(){
+function validate_two_step() {
     let carYears = document.getElementById("car-years");
     let carMakes = document.getElementById("car-makes");
-    let carModels = document.getElementById("car-models");
     let multiformBtnTwo = document.getElementById("multiform-btn-two");
     let step_2_return_1 = document.getElementById("step_2_return_1");
 
-
-
-    console.log(carYears);
-    console.log(carMakes);
-    console.log(carModels);
-    console.log(multiformBtnTwo);
-
+    if (carYears.value == '' && !carMakes.value) {
+        step_2_return_1.classList.remove("active");
+    }
 
     carYears.onchange = function () {
-        if (carYears.value === '') {
-            return false;
-        } else if (carYears.value && carMakes.value && carModels.value) {
+        if (carYears.value == '') {
+            step_2_return_1.classList.remove("active");
+        } else if (carYears.value && carMakes.value) {
             step_2_return_1.classList.add("active");
             multiformBtnTwo.classList.remove("disabled");
         }
     }
 
-    multiformBtnTwo.onclick = function (){
+    carMakes.onchange = function () {
+        if (!carMakes.value) {
+            step_2_return_1.classList.remove("active");
+        } else if (carYears.value && carMakes.value) {
+            step_2_return_1.classList.add("active");
+            multiformBtnTwo.classList.remove("disabled");
+        }
+    }
+
+    multiformBtnTwo.onclick = function () {
         child[1].classList.remove("active");
         child[2].classList.add("active");
     }
 
 
 }
+
 validate_two_step();
+
+document.getElementById("step_3_return_1").onclick = function () {
+    child[0].classList.add("active");
+    child[1].classList.remove("active");
+    child[2].classList.remove("active");
+}
+
+document.getElementById("step_3_return_2").onclick = function () {
+    child[0].classList.remove("active");
+    child[1].classList.add("active");
+    child[2].classList.remove("active");
+}
+
+
+function validate_tri_step() {
+
+
+    let multiformMail_1 = document.getElementById("multiform_mail_1");
+    let multiformMail_2 = document.getElementById("multiform_mail_2");
+    let multiformBtnTri = document.getElementById("multiform-btn-tri");
+    let step_3_return_2 = document.getElementById("step_3_return_2");
+
+
+    multiformMail_1.onchange = function () {
+        if (!multiformMail_1.value) {
+            return false;
+        } else if (multiformMail_1.value && multiformMail_2.value) {
+            multiformBtnTri.classList.remove("disabled");
+            step_3_return_2.classList.add("active");
+        }
+    }
+
+
+    multiformMail_2.onchange = function () {
+        if (!multiformMail_2.value) {
+            return false;
+        } else if (multiformMail_1.value && multiformMail_2.value) {
+            multiformBtnTri.classList.remove("disabled");
+            step_3_return_2.classList.add("active");
+        }
+    }
+
+
+    multiformBtnTri.onclick = function () {
+        child[2].classList.remove("active");
+        child[3].classList.add("active");
+    }
+
+    return true;
+}
+
+validate_tri_step();
+
+
+function validate_four_step() {
+    let multiformMail_3 = document.getElementById("multiform_mail_3");
+    let multiformMail_4 = document.getElementById("multiform_mail_4");
+    let multiformBtnFour = document.getElementById("multiform-btn-four");
+    let step_4_return_3 = document.getElementById("step_4_return_3");
+
+    multiformMail_3.onchange = function () {
+        if (!multiformMail_3.value) {
+            return false;
+        } else if (multiformMail_3.value && multiformMail_4.value) {
+            multiformBtnFour.classList.remove("disabled");
+            step_4_return_3.classList.add("active");
+        }
+    }
+
+    multiformMail_4.onchange = function () {
+        if (!multiformMail_4.value) {
+            return false;
+        } else if (multiformMail_3.value && multiformMail_4.value) {
+            multiformBtnFour.classList.remove("disabled");
+            multiformBtnFour.classList.add("green");
+            step_4_return_3.classList.add("active");
+        }
+    }
+}
+
+validate_four_step();
+
+document.getElementById("step_4_return_1").onclick = function () {
+    child[0].classList.add("active");
+    child[1].classList.remove("active");
+    child[2].classList.remove("active");
+    child[3].classList.remove("active");
+}
+
+document.getElementById("step_4_return_2").onclick = function () {
+    child[0].classList.remove("active");
+    child[1].classList.add("active");
+    child[2].classList.remove("active");
+    child[3].classList.remove("active");
+}
+
+document.getElementById("step_4_return_3").onclick = function () {
+    child[0].classList.remove("active");
+    child[1].classList.remove("active");
+    child[2].classList.add("active");
+    child[3].classList.remove("active");
+}
 
 
 $(".menu__text ul li ul li:last-child a").attr(
@@ -508,6 +614,52 @@ $(document).ready(function () {
     });
 });
 
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+
+// let inputDeliveryFrom = document.getElementById("multiform_from");
+// let inputDeliveryTo = document.getElementById("multiform_to");
+// let inputDatepicker = document.getElementById("datepicker");
+//
+//
+// inputDeliveryFrom.onchange = function () {
+//     console.log(inputDeliveryFrom.value)
+// }
+//
+// inputDeliveryTo.onchange = function () {
+//     console.log(inputDeliveryTo.value)
+// }
+//
+// inputDatepicker.onchange = function () {
+//     console.log(inputDatepicker.value)
+// }
+
+
+$(document).ready(function () {
+
+    //E-mail Ajax Send
+    $("form").submit(function () { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function () {
+            alert("Thank you!");
+            setTimeout(function () {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
+
+});
+
+
 $(document).ready(
     function () {
         //Create a variable for the CarQuery object.  You can call it whatever you like.
@@ -576,26 +728,3 @@ $(document).ready(
             carquery.search();
         });
     });
-
-
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})
-
-
-// let inputDeliveryFrom = document.getElementById("multiform_from");
-// let inputDeliveryTo = document.getElementById("multiform_to");
-// let inputDatepicker = document.getElementById("datepicker");
-//
-//
-// inputDeliveryFrom.onchange = function () {
-//     console.log(inputDeliveryFrom.value)
-// }
-//
-// inputDeliveryTo.onchange = function () {
-//     console.log(inputDeliveryTo.value)
-// }
-//
-// inputDatepicker.onchange = function () {
-//     console.log(inputDatepicker.value)
-// }
