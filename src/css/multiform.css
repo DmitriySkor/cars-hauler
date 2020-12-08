@@ -488,7 +488,7 @@ input.multiform-input:hover:-ms-input-placeholder{
     position: absolute;
     content: '';
     top: 22px;
-    right: -62px;
+    /*right: -62px;*/
     width: 54px;
     height: 1px;
     border: 1px dashed #6FCF97;
