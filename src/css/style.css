@@ -352,7 +352,6 @@ a.head__button:hover {
 
 .reviews_block .img_review {
     width: auto !important;
-    max-width: 109px;
     height: auto;
     max-height: 45px;
     margin-bottom: 35px;
@@ -1561,9 +1560,9 @@ a.tabs-link:hover {
 
 
 .grey__block_imag {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
 
     display: block;
     width: 100%;

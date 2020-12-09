@@ -78,9 +78,9 @@ function styles() {
         }))
 
         // Минификация CSS
-        .pipe(cleanCSS({
-            level: 2
-        }))
+        // .pipe(cleanCSS({
+        //     level: 2
+        // }))
 
         // Копирование CSS в папку build
         .pipe(gulp.dest('./build/css'))
@@ -97,9 +97,9 @@ function scripts() {
         .pipe(concat('script.js'))
 
         //Минификация JS
-        .pipe(uglify({
-            toplevel: true
-        }))
+        // .pipe(uglify({
+        //     toplevel: true
+        // }))
 
         // Копирование JS в папку build
         .pipe(gulp.dest('./build/js'))

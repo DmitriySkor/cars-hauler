@@ -41,7 +41,7 @@
     }
 
     .menu__text ul li a {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .multiform {
@@ -106,6 +106,32 @@
     #sticky-menu {
         display: none;
     }
+
+    .step__progress .l1-1.step_number_txt::before {
+        right: -65px;
+    }
+
+    .checkout__ticket_actives {
+        max-width: 50%;
+    }
+    .checkout__ticket_disable {
+        max-width: 50%;
+    }
+
+    .table__row_link {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .checkout__step.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shipping__details {
+        margin-bottom: var(--main-padding);
+    }
+
 }
 
 @media (min-width: 0) and (max-width: 991px) {
@@ -320,6 +346,78 @@
 
     #modal {
         padding-right: 0 !important;
+    }
+
+    .shipping__details_table {
+        display: none;
+    }
+
+    .shipping__details_table.active {
+        display: block;
+    }
+
+    .shipping__details_head {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .shipping__details {
+        padding: 30px;
+    }
+
+    .shipping__details_head:before{
+        content: url("../img/ico-checkout-select-2.svg");
+        position: absolute;
+        top: 7px;
+        right: 0;
+    }
+    .checkout__ticket_actives-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #checkout__next_1_2 {
+        display: flex;
+    }
+
+    #checkout__next_2_3 {
+        display: flex;
+    }
+
+    #checkout__next_3_4 {
+        display: flex;
+    }
+
+    #checkout__next_4_5 {
+        display: flex;
+    }
+
+    #checkout__next_5_6 {
+        display: flex;
+    }
+
+    #checkout__next_6 {
+        display: flex;
+    }
+
+    .st4 {
+        width: calc(100% - 10px);
+        margin-right: 10px;
+    }
+
+    .st5 {
+        width: calc(100% - 10px);
+        margin-left: 10px;
+    }
+
+    .card__number_row-line-1 {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .sticky__menu_menu {
+        display: none;
     }
 }
 
@@ -904,6 +1002,68 @@
         margin-top: 0;
         min-width: 220px;
     }
+
+    .checkout__ticket {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .checkout__ticket_actives {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .checkout__ticket_disable {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .card__number_row {
+        flex-wrap: wrap;
+    }
+
+    .card__number_row-line-3 {
+        width: 100%;
+        max-width: calc(100% - 220px);
+    }
+
+    .st2 {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .st1 {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    #st {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        margin-right: 10px;
+        background: url(../img/ico-checkout-select-2.svg) no-repeat #f9f9fe;
+        background-position-x: calc(100% - 20px);
+        background-position-y: 25px;
+        padding: 0 36px 0 68px;
+    }
+
+    .checkout_thanks {
+        display: flex;
+        justify-content: center;
+    }
+    .checkout__head {
+        text-align: center;
+    }
+    .checkout__slag {
+        text-align: center;
+    }
+    .checkout__next {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 0) and (max-width: 575px) {
@@ -928,6 +1088,23 @@
         height: auto;
         min-height: 560px;
         padding: 68px 20px;
+    }
+
+    .checkout-contain {
+        padding: 145px 0 var(--main-padding);
+    }
+
+    .step__progress .l1-1.step_number_txt::before {
+        display: none;
+    }
+
+    .checkout__tabs_link a {
+        width: 100%;
+        min-width: 164px;
+    }
+
+    .card__number {
+        flex-direction: column;
     }
 }
 
