@@ -32,12 +32,7 @@ const rigger = require('gulp-rigger');
 
 // Получаем список файлов CSS и определяем их порядок подключения
 const cssFiles = [
-    './src/css/main.css',
-    './src/css/menu.css',
     './src/css/style.css',
-    './src/css/form.css',
-    './src/css/multiform.css',
-    './src/css/footer.css',
     './src/css/media.css'
 ];
 
