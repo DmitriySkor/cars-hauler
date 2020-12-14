@@ -78,7 +78,7 @@
         min-height: 270px;
     }
 
-    a.preview {
+    .preview__link {
         width: 50%;
         margin-bottom: 7px;
     }
@@ -783,7 +783,7 @@
         color: #191c2f;
     }
 
-    a.preview {
+    .preview__link {
         width: 100%;
         margin-bottom: 7px;
     }
